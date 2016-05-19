@@ -16,11 +16,11 @@ import Footer from './modules/footer/footer.jsx';
 class App extends React.Component {
     render() {
         return(
-            <div id='app' className=''>
+            <div id='app' className='main'>
                 <MainNav/>
                 <Header/>
-                <Skills/>
                 <SelectedWork/>
+                <Skills/>
                 <Contact/>
                 <Footer/>
             </div>

@@ -1,3 +1,12 @@
+@import '../../_main.scss';
+
 .header {
-    color: blue;
+    background-color: $gray;
+    &__title {
+        font-weight: 900;
+    }
+    &__bodycopy {
+        font-family: 'effra', sans-serif;
+        color: darken($gray, 65%);
+    }
 }
