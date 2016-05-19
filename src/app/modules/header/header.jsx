@@ -11,7 +11,9 @@ class Header extends React.Component {
     render() {
         return (
             <section className='header'>
-                <h1>Header Component</h1>
+                <h1>Hi, I'm Scott Jones.</h1>
+                <hr/>
+                <p className='header_bodycopy'>I like long walks on the beach. I am decent at basketball. The ladies say I am nice to look at. I am a people person.</p>
             </section>
         );
     }
