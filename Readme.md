@@ -1,6 +1,8 @@
 ## Getting Started
 1) Run `npm install`
+
 2) You now have all the packages
+
 3) Run `npm start` to see the project.
     * You run `npm dev` to do development work
 
