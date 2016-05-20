@@ -15,7 +15,7 @@ import Footer from './modules/footer/footer.jsx';
 class App extends React.Component {
     render() {
         return(
-            <div id='app' className='main'>
+            <div id='app' className='main container-fluid'>
                 <MainNav/>
                 <Header/>
                 <SelectedWork/>

@@ -4,6 +4,7 @@
     background-color: $gray;
     &__title {
         font-weight: 900;
+        color: darken($gray, 20%);
     }
     &__bodycopy {
         font-family: 'effra', sans-serif;
