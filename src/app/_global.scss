@@ -1,0 +1,7 @@
+.nav-list {
+    > li {
+        display: inline-block;
+        text-decoration: none;
+        color: darken($gray, 80%);
+    }
+}

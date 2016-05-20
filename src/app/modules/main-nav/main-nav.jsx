@@ -12,7 +12,7 @@ class MainNav extends React.Component {
             <section className='main-nav'>
                 <div className='container'>
                     <div className='row'>
-                        <ul className='column column-33 column-offset-66'>
+                        <ul className='nav-list col-sm-12'>
                             <li>
                                 <a href='#'>example link here</a>
                             </li>
