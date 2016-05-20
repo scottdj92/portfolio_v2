@@ -1,10 +1,8 @@
-//import foundation
-@import 'settings';
-@import 'milligram';
-@import 'motion-ui';
+//import milligram
+@import '../../node_modules/milligram/dist/milligram.min.css';
 
 //import module stylesheets
-@import './modules/index/index.scss';
+@import './index.scss';
 @import './modules/contact/contact.scss';
 @import './modules/footer/footer.scss';
 @import './modules/header/header.scss';

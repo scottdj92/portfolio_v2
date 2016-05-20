@@ -18,6 +18,10 @@ var config = {
             allChunks: true
         })
     ],
+    resolve: {
+        modulesDirectoies: [nodeModules],
+        extensions: ['', '.css', '.js']
+    },
     module: {
         loaders: [
             {

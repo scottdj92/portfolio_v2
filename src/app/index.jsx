@@ -1,10 +1,8 @@
-import 'milligram';
-
 import React from 'react';
 import {render} from 'react-dom';
 
 //import Sass
-import './index.scss';
+import './_main.scss';
 
 //import components
 import MainNav from './modules/main-nav/main-nav.jsx';
