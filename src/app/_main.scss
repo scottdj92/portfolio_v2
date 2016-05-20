@@ -1,6 +1,13 @@
-$white: #FFFFFF;
-$black: #000000;
-$gray: #DDDAE3;
+//import foundation
+@import 'settings';
+@import 'milligram';
+@import 'motion-ui';
 
-
-@import 'foundation/scss/foundation';
+//import module stylesheets
+@import './modules/index/index.scss';
+@import './modules/contact/contact.scss';
+@import './modules/footer/footer.scss';
+@import './modules/header/header.scss';
+@import './modules/main-nav/main-nav.scss';
+@import './modules/selected-work/selected-work.scss';
+@import './modules/skills/skills.scss';

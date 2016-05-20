@@ -3,27 +3,21 @@ var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var nodeModules = path.join(__dirname, 'node_modules');
 
-//import external packages to be bundled
-//require('foundation-sites');
-
 var BUILD_DIR = path.resolve(__dirname, 'dist');
 var APP_DIR = path.resolve(__dirname, 'src/app');
 
 var config = {
+    context: __dirname + '/src',
     entry: APP_DIR + '/index.jsx',
     output: {
         path: BUILD_DIR,
         filename: 'bundle.js'
     },
-    sassLoader: {
-        includePaths: [nodeModules],
-    },
-    resolve: {
-        root: path.resolve(__dirname),
-        modulesDirectories:[path.resolve(__dirname), 'node_modules'],
-        extensions: [],
-        alias: {}
-    },
+    plugins: [
+        new ExtractTextPlugin('bundle.css', {
+            allChunks: true
+        })
+    ],
     module: {
         loaders: [
             {
@@ -32,17 +26,17 @@ var config = {
                 loader: 'babel'
             },
             {
+                test: /\.css$/,
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
+                include: '/node_modules/milligram/dist/'
+            },
+            {
                 test: /\.scss$/,
-                loader: "style!css!sass"
+                exclude: [/node_modules/],
+                loader: ExtractTextPlugin.extract('css!sass')
             }
         ]
-    },
-    plugins: [
-        new webpack.ProvidePlugin({
-            $: 'jquery',
-            jQuery: 'jquery'
-        })
-    ]
+    }
 };
 
 module.exports = config;

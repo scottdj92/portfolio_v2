@@ -1,1 +1,5 @@
-@import '_main.scss';
+@import "_vars.scss";
+
+.index {
+    color: $gray;
+}
