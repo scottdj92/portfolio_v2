@@ -13,7 +13,13 @@ class Contact extends React.Component {
             <section className='contact'>
                 <h1>Contact section</h1>
                 <form>
-                    <input type='textarea' placeholder='Contact Me'></input>
+                    <fieldset>
+                        <label for='contact-name'></label>
+                        <input type='text' name='contact-name' placeholder='Your Name Here'></input>
+                        <label for='comment'></label>
+                        <textarea name='comment' placeholder='Contact Me'></textarea>
+                        <input type='button' type='submit' value='submit'></input>
+                    </fieldset>
                 </form>
             </section>
         );

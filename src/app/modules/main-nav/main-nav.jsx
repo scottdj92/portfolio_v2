@@ -10,7 +10,18 @@ class MainNav extends React.Component {
     render() {
         return (
             <section className='main-nav'>
-                <h1>Main-nav Component</h1>
+                <div className='container'>
+                    <div className='row'>
+                        <ul className='column column-33 column-offset-66'>
+                            <li>
+                                <a href='#'>example link here</a>
+                            </li>
+                            <li>
+                                <a href='#'>PDF</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </section>
         );
     }

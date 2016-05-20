@@ -1,5 +1,9 @@
-//import milligram
-@import '../../node_modules/milligram/dist/milligram.min.css';
+//import bootstrap's grid system
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_normalize.scss';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss';
+
 
 //import module stylesheets
 @import './index.scss';

@@ -8,7 +8,11 @@ class Footer extends React.Component {
     render() {
         return (
             <section className='footer'>
-                <h1>Footer Section</h1>
+                <ul>
+                    <li><a href='http://twitter.com/sdj2964'>Twitter</a></li>
+                    <li><a href='http://twitter.com/sdj2964'>GitHub</a></li>
+                    <li><a href='http://twitter.com/sdj2964'>Link</a></li>
+                </ul>
             </section>
         );
     }

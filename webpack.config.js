@@ -32,7 +32,6 @@ var config = {
             {
                 test: /\.css$/,
                 loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
-                include: '/node_modules/milligram/dist/'
             },
             {
                 test: /\.scss$/,
