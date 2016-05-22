@@ -1,0 +1,8 @@
+.skills {
+    background-color: lighten($black, 20%);
+    &__container {
+        &__skill {
+            color: darken($white, 30%);
+        }
+    }
+}

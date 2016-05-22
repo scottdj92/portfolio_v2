@@ -3,6 +3,7 @@
 .main-nav {
     background-color: $black;
     .nav-list {
+        float: right;
         a {
             color: $gray;
         }
