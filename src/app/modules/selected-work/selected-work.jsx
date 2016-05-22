@@ -8,8 +8,10 @@ class SelectedWork extends React.Component {
 
     render() {
         return (
-            <section>
-                <h1>Selected work component</h1>
+            <section className='row'>
+                <div>
+
+                </div>
             </section>
         );
     }

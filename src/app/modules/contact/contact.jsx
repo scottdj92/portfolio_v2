@@ -10,7 +10,7 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <section className='contact'>
+            <section className='contact row'>
                 <h1>Contact section</h1>
                 <form>
                     <label for='contact-name'></label>

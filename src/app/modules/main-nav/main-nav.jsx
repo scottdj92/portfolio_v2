@@ -9,15 +9,15 @@ class MainNav extends React.Component {
 
     render() {
         return (
-            <section className='main-nav'>
-                <div className='container'>
+            <section className='main-nav row'>
+                <div className='main-nav-container'>
                     <div className='row'>
-                        <ul className='nav-list col-sm-12'>
+                        <ul className='nav-list col-sm-12 col-sm-offset-9 col-md-12 col-md-offset-9 col-lg-12 col-lg-offset-9'>
                             <li>
-                                <a href='#'>example link here</a>
+                                <a href='#'>Home</a>
                             </li>
                             <li>
-                                <a href='#'>PDF</a>
+                                <a href='#'>Resumé</a>
                             </li>
                         </ul>
                     </div>

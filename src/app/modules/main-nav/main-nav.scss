@@ -1,5 +1,10 @@
 @import "../../_vars.scss";
 
 .main-nav {
-    color: $gray;
+    background-color: $black;
+    .nav-list {
+        a {
+            color: $gray;
+        }
+    }
 }
