@@ -7,16 +7,14 @@ var BUILD_DIR = path.resolve(__dirname, 'dist');
 var APP_DIR = path.resolve(__dirname, 'src/app');
 
 var config = {
-    context: __dirname + '/src',
+    //context: __dirname + '/src',
     entry: APP_DIR + '/index.jsx',
     output: {
         path: BUILD_DIR,
         filename: 'bundle.js'
     },
     plugins: [
-        new ExtractTextPlugin('bundle.css', {
-            allChunks: true
-        })
+        new ExtractTextPlugin('bundle.css')
     ],
     resolve: {
         modulesDirectoies: [nodeModules],
