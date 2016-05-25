@@ -19,7 +19,7 @@ var config = {
         new ExtractTextPlugin('bundle.css')
     ],
     resolve: {
-        modulesDirectories: [nodeModules],
+        //modulesDirectories: [nodeModules],
         extensions: ['', '.css', '.js']
     },
     module: {
