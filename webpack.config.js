@@ -5,12 +5,14 @@ var nodeModules = path.join(__dirname, 'node_modules');
 
 var BUILD_DIR = path.resolve(__dirname, 'dist');
 var APP_DIR = path.resolve(__dirname, 'src/app');
+var ASSET_DIR = path.resolve(__dirname, 'dist/assets');
 
 var config = {
-    //context: __dirname + '/src',
+    context: __dirname + '/src',
     entry: APP_DIR + '/index.jsx',
     output: {
         path: BUILD_DIR,
+        publicPath: '/dist',
         filename: 'bundle.js'
     },
     plugins: [
@@ -35,6 +37,16 @@ var config = {
                 test: /\.scss$/,
                 exclude: [/node_modules/],
                 loader: ExtractTextPlugin.extract('css!sass')
+            },
+            {
+                test: /\.(png|jpg)$/,
+                exclude: [/node_modules/],
+                loader: 'file-loader?name=assets/[name].[ext]'
+            },
+            {
+                test: /\.svg$/,
+                exclude: [/node_modules/],
+                loader: 'file-loader?name=assets/[name].[ext]'
             }
         ]
     }

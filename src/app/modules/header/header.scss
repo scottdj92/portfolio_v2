@@ -2,6 +2,8 @@
 
 .header {
     background-color: $gray;
+    padding: 1%;
+    height: 75vh;
     &__title {
         font-weight: 900;
         color: darken($gray, 20%);
