@@ -14,8 +14,10 @@ class Header extends React.Component {
                 </div>
                 <div className='header__bodycopy col-sm-12 col-md-7 col-lg-7'>
                     <p className='header__bodycopy__title'>I like long walks on the beach. I am decent at basketball. The ladies say I am nice to look at. I am a people person.</p>
-                    <p className='header__bodycopy__scroll'>Scroll down to see my work</p>
-                    <div className='header__bodycopy__bottom-arrow'></div>
+                </div>
+                <div className='header_scroll'>
+                    <p className='header__scroll'>Scroll down to see my work</p>
+                    <div className='header__scroll__bottom-arrow'></div>
                 </div>
             </section>
         );

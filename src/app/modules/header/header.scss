@@ -6,10 +6,9 @@
     height: 75vh;
     &__title {
         font-weight: 900;
-        color: darken($gray, 20%);
+        color: $orange;
     }
     &__bodycopy {
-        font-family: 'effra', sans-serif;
-        color: darken($gray, 65%);
+        color: lighten($black, 10%);
     }
 }
