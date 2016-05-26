@@ -5,13 +5,11 @@
   "main": "index.js",
   "repository": "https://github.com/scottdj92/portfolio_v2.git",
   "scripts": {
-    "start": "webpack-dev-server --content-base dist",
-    "dev": "npm run server && npm run bundle-watch",
-    "server": "webpack-dev-server --progress --hot --inline --colors",
+    "dev": "webpack-dev-server --hot --inline --colors --progress",
     "test": "node test NODE_ENV=test",
-    "bundle": "webpack -d",
+    "bundle": "webpack -d --progress",
     "bundle-watch": "webpack -d --watch",
-    "build": "webpack -p"
+    "build": "webpack -p --progress"
   },
   "author": "Scott Jones",
   "license": "ISC",
