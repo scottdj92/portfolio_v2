@@ -1,8 +1,5 @@
 import React from 'react';
 
-//import scss
-import './contact.scss';
-
 class Contact extends React.Component {
     constructor(props) {
         super(props);

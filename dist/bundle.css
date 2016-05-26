@@ -723,19 +723,18 @@ th {
     color: #363141; }
 
 .main-nav {
-  background-color: #000000; }
+  background-color: #000000;
+  padding-top: 1%;
+  padding-bottom: 1%; }
   .main-nav .nav-list {
     float: right; }
     .main-nav .nav-list a {
       color: #DDDAE3; }
-  .main-nav__container {
-    padding-top: 1%;
-    padding-bottom: 1%; }
-    .main-nav__container img {
-      position: relative;
-      left: 2em;
-      width: 7%;
-      height: 7%; }
+  .main-nav__image-container img {
+    position: relative;
+    left: 2em;
+    width: 7%;
+    height: 7%; }
 
 .selected-work {
   color: red; }
@@ -745,19 +744,18 @@ th {
   .skills__container__skill {
     color: #b3b3b3; }
 .main-nav {
-  background-color: #000000; }
+  background-color: #000000;
+  padding-top: 1%;
+  padding-bottom: 1%; }
   .main-nav .nav-list {
     float: right; }
     .main-nav .nav-list a {
       color: #DDDAE3; }
-  .main-nav__container {
-    padding-top: 1%;
-    padding-bottom: 1%; }
-    .main-nav__container img {
-      position: relative;
-      left: 2em;
-      width: 7%;
-      height: 7%; }
+  .main-nav__image-container img {
+    position: relative;
+    left: 2em;
+    width: 7%;
+    height: 7%; }
 .header {
   background-color: #DDDAE3;
   padding: 1%;

@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --content-base dist",
     "dev": "npm run server && npm run bundle-watch",
-    "server": "webpack-dev-server --content-base dist",
+    "server": "webpack-dev-server --progress --hot --inline --colors",
     "test": "node test NODE_ENV=test",
     "bundle": "webpack -d",
     "bundle-watch": "webpack -d --watch",
