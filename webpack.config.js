@@ -8,11 +8,9 @@ var ASSET_DIR = path.resolve(__dirname, 'dist/assets');
 
 var config = {
     context: __dirname + '/src',
-    entry: [
-        'webpack-dev-server/client?http://localhost:8080',
-        'webpack/hot/only-dev-server',
-        APP_DIR + '/index.jsx',
-    ],
+    entry: {
+        app: APP_DIR + '/index.jsx'
+    },
     output: {
         path: BUILD_DIR,
         publicPath: '/dist',
