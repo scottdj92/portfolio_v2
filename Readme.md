@@ -4,11 +4,14 @@
 2) You now have all the packages
 
 3) Run `npm start` to see the project.
-    * You run `npm dev` to do development work
+    * You run `npm run dev` to do development work
+
+4) Open up localhost:8080, and you should see an index directory, point it to the `dist` directory and it should fire the webpack dev server with HMR
 
 ## Things to Know
  * There are a lot of commands in `package.json`
  * Reading them over to determine which one you want before starting is beneficial
+ * I did not declare `HotModuleReplacement()` in the `plugins` object, because I use webpack's CLI rather than the Node API to configure the dev server to use hot-loader. THEY ARE MUTUALLY EXCLUSIVE.
 
 ## Webpack Configuration
 We'll walk through my webpack configuration (because the Internet has conflicting information on how to create one)
@@ -44,11 +47,11 @@ plugins: [
     new ExtractTextPlugin('bundle.css')
 ],
 resolve: {
-    modulesDirectories: [nodeModules],
+    modulesDirectories: ['node_modules'],
     extensions: ['', '.css', '.js']
 }
 ```
-* We delcare our plugins and resolve the node_modules directories here.
+* We declare our plugins and resolve the node_modules directories here.
 * ExtractTextPlugin will allow us to bundle all of our CSS into one file, named `bundle.css`
 
 ```javascript
@@ -57,7 +60,7 @@ module: {
         {
             test: /\.jsx$/,
             include: APP_DIR,
-            loader: 'babel'
+            loaders: ['react-hot', 'babel']
         },
         {
             test: /\.css$/,
@@ -87,10 +90,10 @@ This one is kind of a doozy, but we'll go through it.
 {
     test: /\.jsx$/,
     include: APP_DIR,
-    loader: 'babel'
+    loaders: ['react-hot', 'babel']
 },
 ```
-We'll test for all files within our application directory that have the extension `.jsx` and load them through the babel loader.
+We'll test for all files within our application directory that have the extension `.jsx` and load them through the babel loader, then we plug them into the React hot loader.
 
 ```javascript
 {
