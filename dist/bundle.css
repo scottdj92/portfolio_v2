@@ -795,6 +795,9 @@ hr {
   overflow: visible;
   clip: auto; }
 
+body {
+  font-family: 'effra', sans-serif; }
+
 .nav-list li {
   text-decoration: none;
   display: inline-block;
@@ -806,18 +809,18 @@ hr {
       text-decoration: underline; }
 
 .index {
-  color: #DDDAE3; }
+  color: #fcfbfe; }
 
 .header {
-  background-color: #DDDAE3;
+  background-color: #fcfbfe;
+  background-image: url("/img/header.jpg");
   padding: 1%;
   height: 75vh; }
   .header__title {
     font-weight: 900;
-    color: #a8a0b7; }
+    color: #f47a20; }
   .header__bodycopy {
-    font-family: 'effra', sans-serif;
-    color: #363141; }
+    color: #1a1a1a; }
 
 .main-nav {
   background-color: #000000;
@@ -826,11 +829,11 @@ hr {
   .main-nav .nav-list {
     float: right; }
     .main-nav .nav-list a {
-      color: #DDDAE3; }
+      color: #fcfbfe; }
   .main-nav__image-container img {
     position: relative;
     left: 2em;
-    width: 11%; }
+    width: 12%; }
 
 .selected-work {
   color: red; }

@@ -20,7 +20,7 @@ class Skills extends React.Component {
                                 <span>Angular 1</span>
                             </li>
                             <li>
-                                <span>Backbone.js</span>
+                                <span>Backbone.js/Marionette.js</span>
                             </li>
                         </ul>
                     </div>
@@ -28,7 +28,7 @@ class Skills extends React.Component {
                         <h4>HTML/CSS</h4>
                         <ul className='nav-list'>
                             <li>
-                                <span>Semantic HTML and Sass/SCSS</span>
+                                <span>Semantic HTML and Sass/SCSS/LESS</span>
                             </li>
                             <li>
                                 <span>Best Practices</span>
@@ -42,10 +42,10 @@ class Skills extends React.Component {
                         <h4>Agile Tools</h4>
                         <ul className='nav-list'>
                             <li>
-                                <span>Atlassian JIRA</span>
+                                <span>Atlassian JIRA, VersionOne, HP Quality Center</span>
                             </li>
                             <li>
-                                <span>VersionOne</span>
+                                <span></span>
                             </li>
                             <li>
                                 <span>Scrum/Sprint Meetings</span>

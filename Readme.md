@@ -12,6 +12,8 @@
  * There are a lot of commands in `package.json`
  * Reading them over to determine which one you want before starting is beneficial
  * I did not declare `HotModuleReplacement()` in the `plugins` object, because I use webpack's CLI rather than the Node API to configure the dev server to use hot-loader. THEY ARE MUTUALLY EXCLUSIVE.
+ * Because of how webpack currently configures Sass files, all files (images) in Sass files will be treated as if they are in `_main.scss`
+    * Take a look at `/app/modules/header/header.scss` to see what I mean
 
 ## Webpack Configuration
 We'll walk through my webpack configuration (because the Internet has conflicting information on how to create one)

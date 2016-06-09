@@ -32,7 +32,7 @@ var config = {
             },
             {
                 test: /\.css$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader'),
+                loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
             },
             {
                 test: /\.scss$/,
@@ -40,7 +40,7 @@ var config = {
                 loader: ExtractTextPlugin.extract('css!sass')
             },
             {
-                test: /\.(png|jpg)$/,
+                test: /\.(jpg|png)$/,
                 exclude: [/node_modules/],
                 loader: 'file-loader?name=assets/[name].[ext]'
             },
