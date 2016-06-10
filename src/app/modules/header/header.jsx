@@ -13,7 +13,7 @@ class Header extends React.Component {
                     <h1>Hi, I'm Scott Jones.</h1>
                 </div>
                 <div className='header__bodycopy col-sm-12 col-md-7 col-lg-4'>
-                    <p className='header__bodycopy__title'>I like long walks on the beach. I am decent at basketball. The ladies say I am nice to look at. I am a people person. I also love doing web development and listening to classic rock.</p>
+                    <p className='header__bodycopy__title'>I like long walks on the beach. The ladies say I am nice to look at. I am a people person. In my spare time, I listen to classic rock and play basketball.</p>
                 </div>
             </section>
         );

@@ -1,3 +1,34 @@
 .contact {
-    
+    height: 55vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    form {
+        input {
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lighten($black, 60%);
+            box-shadow: 0 1px 1px;
+        }
+        textarea {
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+            resize: none;
+            border-color: lighten($black, 60%);
+            box-shadow: 0 1px 1px;
+        }
+    }
+    &__title {
+        input {
+
+        }
+    }
+    &__name {
+        input {
+            padding: 3px;
+        }
+    }
 }

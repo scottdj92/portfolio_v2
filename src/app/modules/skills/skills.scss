@@ -1,6 +1,12 @@
 .skills {
     background-color: lighten($black, 20%);
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 50vh;
     &__container {
+        h1 {
+            color: $orange;
+        }
         &__skill {
             color: darken($white, 30%);
         }
