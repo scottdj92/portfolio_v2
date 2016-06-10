@@ -3,13 +3,25 @@
 .header {
     background-color: $gray;
     background-image: url(../img/header.jpg);
+    background-size: cover;
     padding: 1%;
-    height: 75vh;
+    height: 85vh;
     &__title {
-        font-weight: 900;
-        color: $orange;
+        position: relative;
+        top: 50%;
+        h1 {
+            font-weight: 900;
+            color: $orange;
+            margin: 0;
+            font-size: 5rem;
+        }
     }
     &__bodycopy {
-        color: lighten($black, 10%);
+        position: relative;
+        top: 50%;
+        &__title {
+            color: lighten($white, 10%);
+            font-size: 2rem;
+        }
     }
 }
