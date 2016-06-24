@@ -4,12 +4,12 @@ import CSSTransitionGroup from 'react-addons-css-transition-group';
 class Reactions extends React.Component {
     constructor(props) {
         super(props);
-    },
+    }
 
     showReaction() {
         // TODO: determine a reaction from a static .json list and display it
         // ... carousel-like
-    },
+    }
 
     render() {
         return (
@@ -22,3 +22,5 @@ class Reactions extends React.Component {
         )
     }
 }
+
+export default Reactions;

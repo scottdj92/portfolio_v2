@@ -1,7 +1,7 @@
 @import "../../_vars.scss";
 
 .main-nav {
-    background-color: $black;
+    background-color: lighten($black, 30%);;
     padding-top: 1%;
     padding-bottom: 1%;
     .nav-list {

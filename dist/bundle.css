@@ -808,22 +808,62 @@ body {
     .nav-list li > a:hover {
       text-decoration: underline; }
 
+.section {
+  box-shadow: 0 2px 1px; }
+
 .index {
   color: #fcfbfe; }
 
+.contact {
+  height: 55vh;
+  padding-left: 2%;
+  padding-right: 2%; }
+  .contact form input {
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #999999;
+    box-shadow: 0 1px 1px; }
+  .contact form textarea {
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    resize: none;
+    border-color: #999999;
+    box-shadow: 0 1px 1px; }
+  .contact__name input {
+    padding: 3px; }
+
+.footer {
+  background-color: #000000; }
+  .footer .nav-list a {
+    color: #FFFFFF; }
+
 .header {
   background-color: #fcfbfe;
-  background-image: url("/img/header.jpg");
+  background-image: url(/distassets/header.jpg);
+  background-size: cover;
   padding: 1%;
-  height: 75vh; }
+  height: 85vh; }
   .header__title {
-    font-weight: 900;
-    color: #f47a20; }
+    position: relative;
+    top: 50%; }
+    .header__title h1 {
+      font-weight: 900;
+      color: #f47a20;
+      margin: 0;
+      font-size: 5rem; }
   .header__bodycopy {
-    color: #1a1a1a; }
+    position: relative;
+    top: 50%; }
+    .header__bodycopy__title {
+      color: white;
+      font-size: 2rem; }
 
 .main-nav {
-  background-color: #000000;
+  background-color: #4d4d4d;
   padding-top: 1%;
   padding-bottom: 1%; }
   .main-nav .nav-list {
@@ -836,11 +876,27 @@ body {
     width: 12%; }
 
 .selected-work {
-  color: red; }
+  height: 40vh;
+  background-color: #e6e6e6;
+  padding-left: 2%;
+  padding-right: 2%; }
+  .selected-work__title {
+    color: gray; }
 
 .skills {
-  background-color: #333333; }
+  background-color: #333333;
+  padding-left: 2%;
+  padding-right: 2%;
+  height: 50vh; }
+  .skills__container h1 {
+    color: #f47a20; }
+  .skills__container h4 {
+    color: #e6e6e6; }
   .skills__container__skill {
     color: #b3b3b3; }
+  .skills__container .skills-list li {
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 1rem; }
 
 /*# sourceMappingURL=bundle.css.map*/

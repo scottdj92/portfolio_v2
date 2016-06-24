@@ -7,8 +7,19 @@
         h1 {
             color: $orange;
         }
+        h4 {
+            color: lighten($black, 90%);
+        }
         &__skill {
             color: darken($white, 30%);
+        }
+
+        .skills-list {
+            li {
+                text-decoration: none;
+                list-style: none;
+                margin-bottom: 1rem;
+            }
         }
     }
 }

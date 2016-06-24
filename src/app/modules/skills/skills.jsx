@@ -12,7 +12,7 @@ class Skills extends React.Component {
                     <h1>I am proficient in the following skills:</h1>
                     <div className='skills__container__skill col-sm-12 col-md-3 col-lg-3'>
                         <h4>JavaScript</h4>
-                        <ul className='nav-list'>
+                        <ul className='skills-list'>
                             <li>
                                 <span>React</span>
                             </li>
@@ -26,12 +26,12 @@ class Skills extends React.Component {
                     </div>
                     <div className='skills__container__skill col-sm-12 col-md-3 col-lg-3'>
                         <h4>HTML/CSS</h4>
-                        <ul className='nav-list'>
+                        <ul className='skills-list'>
                             <li>
                                 <span>Semantic HTML and Sass/SCSS/LESS</span>
                             </li>
                             <li>
-                                <span>Best Practices</span>
+                                <span>CSS Frameworks</span>
                             </li>
                             <li>
                                 <span>HTML5 Tags/CSS3 Properties</span>
@@ -40,9 +40,9 @@ class Skills extends React.Component {
                     </div>
                     <div className='skills__container__skill col-sm-12 col-md-3 col-lg-3'>
                         <h4>Agile Tools</h4>
-                        <ul className='nav-list'>
+                        <ul className='skills-list'>
                             <li>
-                                <span>Atlassian JIRA, VersionOne, HP Quality Center</span>
+                                <span>JIRA, VersionOne, HP Quality Center</span>
                             </li>
                             <li>
                                 <span></span>
@@ -54,7 +54,7 @@ class Skills extends React.Component {
                     </div>
                     <div className='skills__container__skill col-sm-12 col-md-3 col-lg-2'>
                         <h4>Development Tools</h4>
-                        <ul className='nav-list'>
+                        <ul className='skills-list'>
                             <li>
                                 <span>Gulp/Webpack/Grunt</span>
                             </li>
