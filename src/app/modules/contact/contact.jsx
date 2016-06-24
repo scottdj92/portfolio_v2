@@ -12,13 +12,13 @@ class Contact extends React.Component {
                 <form>
                     <div className='contact__name row'>
                         <div className='col-sm-12 col-md-6 col-lg-6'>
-                            <label for='contact-name'></label>
+                            <label for='contact-name'>Your Name</label>
                             <input type='text' name='contact-name' placeholder='Your Name Here'></input>
                         </div>
                     </div>
                     <div className='contact__message row'>
                         <div className='col-sm-12 col-md-8 col-lg-8'>
-                            <label for='comment'></label>
+                            <label for='comment'>Your Comments</label>
                             <textarea name='comment' placeholder='Contact Me'></textarea>
                         </div>
                     </div>
