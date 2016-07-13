@@ -36,7 +36,6 @@ var config = {
             },
             {
                 test: /\.scss$/,
-                exclude: [/node_modules/],
                 loader: ExtractTextPlugin.extract('css!sass')
             },
             {

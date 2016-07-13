@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "webpack-dev-server --hot --inline --colors --progress",
     "test": "node test NODE_ENV=test",
-    "bundle": "webpack -d --progress",
+    "bundle": "webpack -d --progress --show-error-details",
     "bundle-watch": "webpack -d --watch",
     "build": "webpack -p --progress"
   },
@@ -23,11 +23,10 @@
     "webpack": "^1.13.0"
   },
   "devDependencies": {
-    "bootstrap-sass": "^3.2.0",
-    "bootstrap-sass-webpack": "0.0.3",
     "css-loader": "^0.23.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.8.5",
+    "foundation-sites": "^6.2.3",
     "node-sass": "^3.7.0",
     "react-addons-css-transition-group": "^15.1.0",
     "react-hot-loader": "^1.3.0",
