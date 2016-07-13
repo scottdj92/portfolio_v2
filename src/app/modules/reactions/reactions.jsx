@@ -13,8 +13,8 @@ class Reactions extends React.Component {
 
     render() {
         return (
-            <section className='reactions row'>
-                <div className='reactions__container'>
+            <section className='reactions'>
+                <div className='reactions__container row'>
                     <h4 className='reactions__container__reaction'></h4>
                     <p>{this.showReaction()}</p>
                 </div>

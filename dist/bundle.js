@@ -61,31 +61,31 @@
 	
 	__webpack_require__(/*! ./_main.scss */ 168);
 	
-	var _mainNav = __webpack_require__(/*! ./modules/main-nav/main-nav.jsx */ 171);
+	var _mainNav = __webpack_require__(/*! ./modules/main-nav/main-nav.jsx */ 170);
 	
 	var _mainNav2 = _interopRequireDefault(_mainNav);
 	
-	var _header = __webpack_require__(/*! ./modules/header/header.jsx */ 173);
+	var _header = __webpack_require__(/*! ./modules/header/header.jsx */ 172);
 	
 	var _header2 = _interopRequireDefault(_header);
 	
-	var _skills = __webpack_require__(/*! ./modules/skills/skills.jsx */ 174);
+	var _skills = __webpack_require__(/*! ./modules/skills/skills.jsx */ 173);
 	
 	var _skills2 = _interopRequireDefault(_skills);
 	
-	var _selectedWork = __webpack_require__(/*! ./modules/selected-work/selected-work.jsx */ 175);
+	var _selectedWork = __webpack_require__(/*! ./modules/selected-work/selected-work.jsx */ 174);
 	
 	var _selectedWork2 = _interopRequireDefault(_selectedWork);
 	
-	var _reactions = __webpack_require__(/*! ./modules/reactions/reactions */ 176);
+	var _reactions = __webpack_require__(/*! ./modules/reactions/reactions */ 175);
 	
 	var _reactions2 = _interopRequireDefault(_reactions);
 	
-	var _contact = __webpack_require__(/*! ./modules/contact/contact.jsx */ 184);
+	var _contact = __webpack_require__(/*! ./modules/contact/contact.jsx */ 183);
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
-	var _footer = __webpack_require__(/*! ./modules/footer/footer.jsx */ 185);
+	var _footer = __webpack_require__(/*! ./modules/footer/footer.jsx */ 184);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
@@ -98,7 +98,7 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	//import index.html
-	__webpack_require__(/*! file-loader?name=[name].[ext]!../index.html */ 186);
+	__webpack_require__(/*! file-loader?name=[name].[ext]!../index.html */ 185);
 	
 	//import Sass
 	
@@ -120,7 +120,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'div',
-	                { id: 'app', className: 'main container-fluid' },
+	                { className: 'main' },
 	                _react2.default.createElement(_mainNav2.default, null),
 	                _react2.default.createElement(_header2.default, null),
 	                _react2.default.createElement(_selectedWork2.default, null),
@@ -20741,8 +20741,7 @@
 
 /***/ },
 /* 169 */,
-/* 170 */,
-/* 171 */
+/* 170 */
 /*!*******************************************!*\
   !*** ./app/modules/main-nav/main-nav.jsx ***!
   \*******************************************/
@@ -20762,8 +20761,6 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	__webpack_require__(/*! ../../../img/logo.svg */ 172);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20771,9 +20768,6 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-	
-	//import logo svg
-	
 	
 	var MainNav = function (_React$Component) {
 	    _inherits(MainNav, _React$Component);
@@ -20792,12 +20786,12 @@
 	                { className: 'main-nav row' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'main-nav__image-container col-sm-6 col-md-6 col-lg-6' },
-	                    _react2.default.createElement('img', { src: './assets/logo.svg', className: 'img-responsive' })
+	                    { className: 'main-nav__image-container small-5 column' },
+	                    _react2.default.createElement('img', { src: __webpack_require__(/*! ../../../img/logo.svg */ 171), className: 'logo-img' })
 	                ),
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'main-nav__links-container col-sm-5 col-md-5 col-lg-5' },
+	                    { className: 'main-nav__links-container small-6 column' },
 	                    _react2.default.createElement(
 	                        'ul',
 	                        { className: 'nav-list' },
@@ -20833,7 +20827,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/sjone4/Desktop/funsies/portfolio-react-webpack/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "main-nav.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 172 */
+/* 171 */
 /*!**********************!*\
   !*** ./img/logo.svg ***!
   \**********************/
@@ -20842,7 +20836,7 @@
 	module.exports = __webpack_require__.p + "assets/logo.svg";
 
 /***/ },
-/* 173 */
+/* 172 */
 /*!***************************************!*\
   !*** ./app/modules/header/header.jsx ***!
   \***************************************/
@@ -20918,7 +20912,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/sjone4/Desktop/funsies/portfolio-react-webpack/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "header.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 174 */
+/* 173 */
 /*!***************************************!*\
   !*** ./app/modules/skills/skills.jsx ***!
   \***************************************/
@@ -21138,7 +21132,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/sjone4/Desktop/funsies/portfolio-react-webpack/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "skills.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 175 */
+/* 174 */
 /*!*****************************************************!*\
   !*** ./app/modules/selected-work/selected-work.jsx ***!
   \*****************************************************/
@@ -21212,7 +21206,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/sjone4/Desktop/funsies/portfolio-react-webpack/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "selected-work.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 176 */
+/* 175 */
 /*!*********************************************!*\
   !*** ./app/modules/reactions/reactions.jsx ***!
   \*********************************************/
@@ -21232,7 +21226,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactAddonsCssTransitionGroup = __webpack_require__(/*! react-addons-css-transition-group */ 177);
+	var _reactAddonsCssTransitionGroup = __webpack_require__(/*! react-addons-css-transition-group */ 176);
 	
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 	
@@ -21287,16 +21281,16 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/sjone4/Desktop/funsies/portfolio-react-webpack/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "reactions.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 177 */
+/* 176 */
 /*!*******************************************************!*\
   !*** ../~/react-addons-css-transition-group/index.js ***!
   \*******************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(/*! react/lib/ReactCSSTransitionGroup */ 178);
+	module.exports = __webpack_require__(/*! react/lib/ReactCSSTransitionGroup */ 177);
 
 /***/ },
-/* 178 */
+/* 177 */
 /*!*************************************************!*\
   !*** ../~/react/lib/ReactCSSTransitionGroup.js ***!
   \*************************************************/
@@ -21319,8 +21313,8 @@
 	
 	var React = __webpack_require__(/*! ./React */ 2);
 	
-	var ReactTransitionGroup = __webpack_require__(/*! ./ReactTransitionGroup */ 179);
-	var ReactCSSTransitionGroupChild = __webpack_require__(/*! ./ReactCSSTransitionGroupChild */ 181);
+	var ReactTransitionGroup = __webpack_require__(/*! ./ReactTransitionGroup */ 178);
+	var ReactCSSTransitionGroupChild = __webpack_require__(/*! ./ReactCSSTransitionGroupChild */ 180);
 	
 	function createTransitionTimeoutPropValidator(transitionType) {
 	  var timeoutPropName = 'transition' + transitionType + 'Timeout';
@@ -21386,7 +21380,7 @@
 	module.exports = ReactCSSTransitionGroup;
 
 /***/ },
-/* 179 */
+/* 178 */
 /*!**********************************************!*\
   !*** ../~/react/lib/ReactTransitionGroup.js ***!
   \**********************************************/
@@ -21408,7 +21402,7 @@
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
 	var React = __webpack_require__(/*! ./React */ 2);
-	var ReactTransitionChildMapping = __webpack_require__(/*! ./ReactTransitionChildMapping */ 180);
+	var ReactTransitionChildMapping = __webpack_require__(/*! ./ReactTransitionChildMapping */ 179);
 	
 	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 11);
 	
@@ -21600,7 +21594,7 @@
 	module.exports = ReactTransitionGroup;
 
 /***/ },
-/* 180 */
+/* 179 */
 /*!*****************************************************!*\
   !*** ../~/react/lib/ReactTransitionChildMapping.js ***!
   \*****************************************************/
@@ -21705,7 +21699,7 @@
 	module.exports = ReactTransitionChildMapping;
 
 /***/ },
-/* 181 */
+/* 180 */
 /*!******************************************************!*\
   !*** ../~/react/lib/ReactCSSTransitionGroupChild.js ***!
   \******************************************************/
@@ -21727,8 +21721,8 @@
 	var React = __webpack_require__(/*! ./React */ 2);
 	var ReactDOM = __webpack_require__(/*! ./ReactDOM */ 34);
 	
-	var CSSCore = __webpack_require__(/*! fbjs/lib/CSSCore */ 182);
-	var ReactTransitionEvents = __webpack_require__(/*! ./ReactTransitionEvents */ 183);
+	var CSSCore = __webpack_require__(/*! fbjs/lib/CSSCore */ 181);
+	var ReactTransitionEvents = __webpack_require__(/*! ./ReactTransitionEvents */ 182);
 	
 	var onlyChild = __webpack_require__(/*! ./onlyChild */ 32);
 	
@@ -21873,7 +21867,7 @@
 	module.exports = ReactCSSTransitionGroupChild;
 
 /***/ },
-/* 182 */
+/* 181 */
 /*!****************************************!*\
   !*** ../~/react/~/fbjs/lib/CSSCore.js ***!
   \****************************************/
@@ -22003,7 +21997,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ../~/webpack/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 183 */
+/* 182 */
 /*!***********************************************!*\
   !*** ../~/react/lib/ReactTransitionEvents.js ***!
   \***********************************************/
@@ -22084,7 +22078,7 @@
 	module.exports = ReactTransitionEvents;
 
 /***/ },
-/* 184 */
+/* 183 */
 /*!*****************************************!*\
   !*** ./app/modules/contact/contact.jsx ***!
   \*****************************************/
@@ -22181,7 +22175,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/sjone4/Desktop/funsies/portfolio-react-webpack/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "contact.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 185 */
+/* 184 */
 /*!***************************************!*\
   !*** ./app/modules/footer/footer.jsx ***!
   \***************************************/
@@ -22280,7 +22274,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/sjone4/Desktop/funsies/portfolio-react-webpack/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "footer.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 186 */
+/* 185 */
 /*!*******************************************************!*\
   !*** ../~/file-loader?name=[name].[ext]!./index.html ***!
   \*******************************************************/

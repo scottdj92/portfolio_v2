@@ -21,7 +21,7 @@ var config = {
     ],
     resolve: {
         modulesDirectories: ['node_modules'],
-        extensions: ['', '.css', '.js', '.jsx']
+        extensions: ['', '.css', '.js', '.jsx', '.scss']
     },
     module: {
         loaders: [

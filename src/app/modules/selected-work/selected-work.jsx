@@ -13,10 +13,12 @@ class SelectedWork extends React.Component {
 
     render() {
         return (
-            <section className='selected-work row'>
-                <h3 className='selected-work__title'>A few of my selected works</h3>
-                <div className='skills-container__js'>
-                    {this.renderSelectedWorks()}
+            <section className='selected-work'>
+                <div className='row'>
+                    <h3 className='selected-work__title'>A few of my selected works</h3>
+                    <div className='skills-container__js'>
+                        {this.renderSelectedWorks()}
+                    </div>
                 </div>
             </section>
         );

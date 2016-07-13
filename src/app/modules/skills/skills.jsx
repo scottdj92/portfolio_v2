@@ -8,7 +8,7 @@ class Skills extends React.Component {
     render() {
         return (
             <section className='skills row section'>
-                <div className='skills__container'>
+                <div className='skills__container row'>
                     <h1>I am proficient in the following skills:</h1>
                     <div className='skills__container__skill col-sm-12 col-md-3 col-lg-3'>
                         <h4>JavaScript</h4>
