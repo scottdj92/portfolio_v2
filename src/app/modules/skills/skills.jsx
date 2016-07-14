@@ -7,10 +7,10 @@ class Skills extends React.Component {
 
     render() {
         return (
-            <section className='skills row section'>
+            <section className='skills'>
                 <div className='skills__container row'>
-                    <h1>I am proficient in the following skills:</h1>
-                    <div className='skills__container__skill col-sm-12 col-md-3 col-lg-3'>
+                    <h1>I like doing coding stuff:</h1>
+                    <div className='skills__container__skill small-4 column'>
                         <h4>JavaScript</h4>
                         <ul className='skills-list'>
                             <li>
@@ -24,7 +24,7 @@ class Skills extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    <div className='skills__container__skill col-sm-12 col-md-3 col-lg-3'>
+                    <div className='skills__container__skill small-4 column'>
                         <h4>HTML/CSS</h4>
                         <ul className='skills-list'>
                             <li>
@@ -38,21 +38,7 @@ class Skills extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    <div className='skills__container__skill col-sm-12 col-md-3 col-lg-3'>
-                        <h4>Agile Tools</h4>
-                        <ul className='skills-list'>
-                            <li>
-                                <span>JIRA, VersionOne, HP Quality Center</span>
-                            </li>
-                            <li>
-                                <span></span>
-                            </li>
-                            <li>
-                                <span>Scrum/Sprint Meetings</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className='skills__container__skill col-sm-12 col-md-3 col-lg-2'>
+                    <div className='skills__container__skill small-3 column end'>
                         <h4>Development Tools</h4>
                         <ul className='skills-list'>
                             <li>
