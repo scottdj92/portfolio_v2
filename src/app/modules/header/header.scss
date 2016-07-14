@@ -4,6 +4,12 @@
     background-size: cover;
     padding: 1%;
     height: 85vh;
+
+    &__container {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     &__title {
         position: relative;
         top: 50%;

@@ -9,7 +9,7 @@ class Header extends React.Component {
     render() {
         return (
             <section className='header'>
-                <div className='row'>
+                <div className='row header__container'>
                     <div className='header__title col-sm-12 col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2'>
                         <h1>Hi, I'm Scott Jones.</h1>
                     </div>
