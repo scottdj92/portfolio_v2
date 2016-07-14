@@ -12,7 +12,7 @@ class MainNav extends React.Component {
                     <div className='main-nav__image-container small-5 column'>
                         <img src={require('../../../img/logo.svg')} className='logo-img'/>
                     </div>
-                    <div className='main-nav__links-container small-6 column'>
+                    <div className='main-nav__links-container small-6 column end'>
                         <ul className='nav-list'>
                             <li>
                                 <a href='#'>Home</a>

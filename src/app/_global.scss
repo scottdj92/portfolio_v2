@@ -5,22 +5,3 @@ body {
 h1, h2, h3, h4 {
     font-family: 'effra', sans-serif;
 }
-
-.nav-list {
-     li {
-         text-decoration: none;
-         display: inline-block;
-         margin-right: 1rem;
-        > a {
-            text-decoration: none;
-            color: darken($gray, 80%);
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-}
-
-.section {
-    box-shadow: 0 2px 1px;
-}
