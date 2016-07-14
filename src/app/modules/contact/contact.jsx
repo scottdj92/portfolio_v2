@@ -7,23 +7,25 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <section className='contact row section'>
-                <h1 className='contact__title'>Feel free to contact me anytime!</h1>
-                <form>
-                    <div className='contact__name row'>
-                        <div className='col-sm-12 col-md-6 col-lg-6'>
-                            <label for='contact-name'>Your Name</label>
-                            <input type='text' name='contact-name' placeholder='Your Name Here'></input>
+            <section className='contact'>
+                <div className='row'>
+                    <h1 className='contact__title'>Feel free to contact me anytime!</h1>
+                    <form>
+                        <div className='contact__name row'>
+                            <div className='small-12 medium-4 columns'>
+                                <label for='contact-name' className='contact__name__label'>Your Name</label>
+                                <input type='text' name='contact-name' placeholder='Your Name Here'></input>
+                            </div>
                         </div>
-                    </div>
-                    <div className='contact__message row'>
-                        <div className='col-sm-12 col-md-8 col-lg-8'>
-                            <label for='comment'>Your Comments</label>
-                            <textarea name='comment' placeholder='Contact Me'></textarea>
+                        <div className='contact__message row'>
+                            <div className='small-12 medium-7 columns'>
+                                <label for='comment'>Your Comments</label>
+                                <textarea name='comment' placeholder='Contact Me'></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <input className='contact__submit' type='button' type='submit' value='submit'></input>
-                </form>
+                        <input className='contact__submit' type='button' type='submit' value='submit'></input>
+                    </form>
+                </div>
             </section>
         );
     }
