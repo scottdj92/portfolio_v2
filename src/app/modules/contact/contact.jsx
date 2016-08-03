@@ -11,24 +11,18 @@ class Contact extends React.Component {
                 <div className='row'>
                     <div className='small-12 medium-7 large-7 columns'>
                         <h1 className='contact__title'>Feel free to contact me anytime!</h1>
-                        <form>
-                            <div className='contact__name row'>
-                                <div className='small-12 medium-4 columns'>
-                                    <label for='contact-name' className='contact__name__label'>Your Name</label>
-                                    <input type='text' name='contact-name' placeholder='Your Name Here'></input>
-                                </div>
-                            </div>
-                            <div className='contact__message row'>
-                                <div className='small-12 medium-7 columns'>
-                                    <label for='comment'>Your Comments</label>
-                                    <textarea name='comment' placeholder='Contact Me'></textarea>
-                                </div>
-                            </div>
-                            <input className='contact__submit' type='button' type='submit' value='submit'></input>
-                        </form>
                     </div>
-                    <div className='small-12 medium-4 large-4 columns end'>
-                        <img src='http://placehold.it/300'></img>
+                </div>
+                <div className='row'>
+                    <div className='small-9 medium-5 large-5 columns'>
+                        <p className='contact__bodycopy'>Now that you've reached this point, I'm sure you've decided to send me an email. Good thing there's an "email me" button right there! I look forward to chatting with you.</p>
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className="small-12 medium-5 large-5 columns">
+                        <div className='contact__container'>
+                            <a className='contact__button' href='mailto:scottdj92@gmail.com' target='_top'>Send me an email!</a>
+                        </div>
                     </div>
                 </div>
             </section>

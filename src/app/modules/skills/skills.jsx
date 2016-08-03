@@ -9,8 +9,8 @@ class Skills extends React.Component {
         return (
             <section className='skills'>
                 <div className='skills__container row'>
-                    <h1>I like doing coding stuff:</h1>
-                    <div className='skills__container__skill small-4 column'>
+                    <h1>I like to code:</h1>
+                    <div className='skills__container__skill small-12 large-4 column'>
                         <h4>JavaScript</h4>
                         <ul className='skills-list'>
                             <li>
@@ -24,7 +24,7 @@ class Skills extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    <div className='skills__container__skill small-4 column'>
+                    <div className='skills__container__skill small-12 large-4 column'>
                         <h4>HTML/CSS</h4>
                         <ul className='skills-list'>
                             <li>
@@ -38,14 +38,14 @@ class Skills extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    <div className='skills__container__skill small-3 column end'>
+                    <div className='skills__container__skill small-12 large-3 column end'>
                         <h4>Development Tools</h4>
                         <ul className='skills-list'>
                             <li>
                                 <span>Gulp/Webpack/Grunt</span>
                             </li>
                             <li>
-                                <span>Git/Stash/BitBucket</span>
+                                <span>GitHub/Stash/BitBucket</span>
                             </li>
                             <li>
                                 <span>Heroku</span>
