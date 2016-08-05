@@ -1,9 +1,12 @@
 .selected-work {
-    height: 40vh;
     background-color: lighten($black, 90%);
     padding-left: 2%;
     padding-right: 2%;
+    padding-bottom: 2%;
     &__title {
         color: lighten($black, 50%);
+    }
+    &__project {
+        
     }
 }

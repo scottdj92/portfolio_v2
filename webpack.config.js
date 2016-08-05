@@ -47,6 +47,11 @@ var config = {
                 test: /\.svg$/,
                 exclude: [/node_modules/],
                 loader: 'file-loader?name=assets/[name].[ext]'
+            },
+            {
+                test: /\.json$/,
+                exclude: [/node_modules/],
+                loader: 'json-loader?name=assets/[name].[ext]'
             }
         ]
     }

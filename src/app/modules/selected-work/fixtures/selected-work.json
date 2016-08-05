@@ -1,0 +1,26 @@
+[
+    {
+        "brand": "Lord & Taylor",
+        "time": "2016",
+        "excerpt":"Saks Off5th was revamping their older website to leverage React.js, and I was a part of the debugging and support team. Lord & Taylor was re-skinned using modern CSS strategies and re-scaffolded with Sass. L&T re-skinning required updates to code that was years old. I worked on a team, combining our skills to present something that we could be proud of.",
+        "client": "HBC Digital",
+        "link": "http://www.google.com",
+        "image": "http://placehold.it/300"
+    },
+    {
+        "brand": "Petco Foundation",
+        "time": "2016",
+        "excerpt": "Petco Foundation is a custom WordPress theme built according to their specifications. We wanted to deliver a brand-focused experience that drove home the point of \"Finding Love\" where pets' stories would be shared along with their owners'. The pair would be showcased to demonstrate how Petco Foundation contributes to only people that would maximize it, including owners of smaller animal shelters.",
+        "client": "Petco Foundation",
+        "link": "http://www.google.com",
+        "image": "http://placehold.it/300"
+    },
+    {
+        "brand": "Usherbot",
+        "time": "2016",
+        "excerpt": "A slack bot built with Howdy's botkit that hooked into Slack's internal API to enable voting and display of movies for inter-office entertainment.",
+        "client": "SapientNitro XT Boston",
+        "link": "",
+        "image": "http://placehold.it/300"
+    }
+]

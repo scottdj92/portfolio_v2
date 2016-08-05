@@ -61,31 +61,31 @@
 	
 	__webpack_require__(/*! ./_main.scss */ 168);
 	
-	var _mainNav = __webpack_require__(/*! ./modules/main-nav/main-nav.jsx */ 170);
+	var _mainNav = __webpack_require__(/*! ./modules/main-nav/main-nav.jsx */ 171);
 	
 	var _mainNav2 = _interopRequireDefault(_mainNav);
 	
-	var _header = __webpack_require__(/*! ./modules/header/header.jsx */ 172);
+	var _header = __webpack_require__(/*! ./modules/header/header.jsx */ 173);
 	
 	var _header2 = _interopRequireDefault(_header);
 	
-	var _skills = __webpack_require__(/*! ./modules/skills/skills.jsx */ 173);
+	var _skills = __webpack_require__(/*! ./modules/skills/skills.jsx */ 174);
 	
 	var _skills2 = _interopRequireDefault(_skills);
 	
-	var _selectedWork = __webpack_require__(/*! ./modules/selected-work/selected-work.jsx */ 174);
+	var _selectedWork = __webpack_require__(/*! ./modules/selected-work/selected-work.jsx */ 175);
 	
 	var _selectedWork2 = _interopRequireDefault(_selectedWork);
 	
-	var _reactions = __webpack_require__(/*! ./modules/reactions/reactions */ 175);
+	var _reactions = __webpack_require__(/*! ./modules/reactions/reactions */ 176);
 	
 	var _reactions2 = _interopRequireDefault(_reactions);
 	
-	var _contact = __webpack_require__(/*! ./modules/contact/contact.jsx */ 183);
+	var _contact = __webpack_require__(/*! ./modules/contact/contact.jsx */ 184);
 	
 	var _contact2 = _interopRequireDefault(_contact);
 	
-	var _footer = __webpack_require__(/*! ./modules/footer/footer.jsx */ 184);
+	var _footer = __webpack_require__(/*! ./modules/footer/footer.jsx */ 185);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
@@ -98,7 +98,7 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	//import index.html
-	__webpack_require__(/*! file-loader?name=[name].[ext]!../index.html */ 185);
+	__webpack_require__(/*! file-loader?name=[name].[ext]!../index.html */ 186);
 	
 	//import Sass
 	
@@ -20741,7 +20741,8 @@
 
 /***/ },
 /* 169 */,
-/* 170 */
+/* 170 */,
+/* 171 */
 /*!*******************************************!*\
   !*** ./app/modules/main-nav/main-nav.jsx ***!
   \*******************************************/
@@ -20783,34 +20784,38 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'section',
-	                { className: 'main-nav row' },
+	                { className: 'main-nav' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'main-nav__image-container small-5 column' },
-	                    _react2.default.createElement('img', { src: __webpack_require__(/*! ../../../img/logo.svg */ 171), className: 'logo-img' })
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'main-nav__links-container small-6 column' },
+	                    { className: 'row' },
 	                    _react2.default.createElement(
-	                        'ul',
-	                        { className: 'nav-list' },
+	                        'div',
+	                        { className: 'main-nav__image-container small-5 column' },
+	                        _react2.default.createElement('img', { src: __webpack_require__(/*! ../../../img/logo.svg */ 172), className: 'logo-img' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'main-nav__links-container small-6 column end' },
 	                        _react2.default.createElement(
-	                            'li',
-	                            null,
+	                            'ul',
+	                            { className: 'nav-list' },
 	                            _react2.default.createElement(
-	                                'a',
-	                                { href: '#' },
-	                                'Home'
-	                            )
-	                        ),
-	                        _react2.default.createElement(
-	                            'li',
-	                            null,
+	                                'li',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    { href: '#' },
+	                                    'Home'
+	                                )
+	                            ),
 	                            _react2.default.createElement(
-	                                'a',
-	                                { href: '#' },
-	                                'Resumé'
+	                                'li',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    { href: '#' },
+	                                    'Resumé'
+	                                )
 	                            )
 	                        )
 	                    )
@@ -20827,7 +20832,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/sjone4/Desktop/funsies/portfolio-react-webpack/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "main-nav.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 171 */
+/* 172 */
 /*!**********************!*\
   !*** ./img/logo.svg ***!
   \**********************/
@@ -20836,7 +20841,7 @@
 	module.exports = __webpack_require__.p + "assets/logo.svg";
 
 /***/ },
-/* 172 */
+/* 173 */
 /*!***************************************!*\
   !*** ./app/modules/header/header.jsx ***!
   \***************************************/
@@ -20881,23 +20886,27 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'section',
-	                { className: 'header row' },
+	                { className: 'header' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'header__title col-sm-12 col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2' },
+	                    { className: 'row header__container' },
 	                    _react2.default.createElement(
-	                        'h1',
-	                        null,
-	                        'Hi, I\'m Scott Jones.'
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'header__bodycopy col-sm-12 col-md-7 col-lg-4' },
+	                        'div',
+	                        { className: 'header__title col-sm-12 col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2' },
+	                        _react2.default.createElement(
+	                            'h1',
+	                            null,
+	                            'Hi, I\'m Scott Jones.'
+	                        )
+	                    ),
 	                    _react2.default.createElement(
-	                        'p',
-	                        { className: 'header__bodycopy__title' },
-	                        'I like long walks on the beach. The ladies say I am nice to look at. I am a people person. In my spare time, I listen to classic rock and play basketball.'
+	                        'div',
+	                        { className: 'header__bodycopy col-sm-12 col-md-7 col-lg-4' },
+	                        _react2.default.createElement(
+	                            'p',
+	                            { className: 'header__bodycopy__title' },
+	                            'I like long walks on the beach. The ladies say I am nice to look at. I am a people person. In my spare time, I listen to classic rock and play basketball.'
+	                        )
 	                    )
 	                )
 	            );
@@ -20912,7 +20921,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/sjone4/Desktop/funsies/portfolio-react-webpack/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "header.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 173 */
+/* 174 */
 /*!***************************************!*\
   !*** ./app/modules/skills/skills.jsx ***!
   \***************************************/
@@ -20954,18 +20963,18 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'section',
-	                { className: 'skills row section' },
+	                { className: 'skills' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'skills__container' },
+	                    { className: 'skills__container row' },
 	                    _react2.default.createElement(
 	                        'h1',
 	                        null,
-	                        'I am proficient in the following skills:'
+	                        'I like doing coding stuff:'
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'skills__container__skill col-sm-12 col-md-3 col-lg-3' },
+	                        { className: 'skills__container__skill small-4 column' },
 	                        _react2.default.createElement(
 	                            'h4',
 	                            null,
@@ -21005,7 +21014,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'skills__container__skill col-sm-12 col-md-3 col-lg-3' },
+	                        { className: 'skills__container__skill small-4 column' },
 	                        _react2.default.createElement(
 	                            'h4',
 	                            null,
@@ -21045,43 +21054,7 @@
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'skills__container__skill col-sm-12 col-md-3 col-lg-3' },
-	                        _react2.default.createElement(
-	                            'h4',
-	                            null,
-	                            'Agile Tools'
-	                        ),
-	                        _react2.default.createElement(
-	                            'ul',
-	                            { className: 'skills-list' },
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                _react2.default.createElement(
-	                                    'span',
-	                                    null,
-	                                    'JIRA, VersionOne, HP Quality Center'
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                _react2.default.createElement('span', null)
-	                            ),
-	                            _react2.default.createElement(
-	                                'li',
-	                                null,
-	                                _react2.default.createElement(
-	                                    'span',
-	                                    null,
-	                                    'Scrum/Sprint Meetings'
-	                                )
-	                            )
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'skills__container__skill col-sm-12 col-md-3 col-lg-2' },
+	                        { className: 'skills__container__skill small-3 column end' },
 	                        _react2.default.createElement(
 	                            'h4',
 	                            null,
@@ -21132,7 +21105,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/sjone4/Desktop/funsies/portfolio-react-webpack/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "skills.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 174 */
+/* 175 */
 /*!*****************************************************!*\
   !*** ./app/modules/selected-work/selected-work.jsx ***!
   \*****************************************************/
@@ -21183,16 +21156,20 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'section',
-	                { className: 'selected-work row' },
-	                _react2.default.createElement(
-	                    'h3',
-	                    { className: 'selected-work__title' },
-	                    'A few of my selected works'
-	                ),
+	                { className: 'selected-work' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'skills-container__js' },
-	                    this.renderSelectedWorks()
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                        'h3',
+	                        { className: 'selected-work__title' },
+	                        'A few of my selected works'
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'skills-container__js' },
+	                        this.renderSelectedWorks()
+	                    )
 	                )
 	            );
 	        }
@@ -21206,7 +21183,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/sjone4/Desktop/funsies/portfolio-react-webpack/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "selected-work.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 175 */
+/* 176 */
 /*!*********************************************!*\
   !*** ./app/modules/reactions/reactions.jsx ***!
   \*********************************************/
@@ -21226,7 +21203,7 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactAddonsCssTransitionGroup = __webpack_require__(/*! react-addons-css-transition-group */ 176);
+	var _reactAddonsCssTransitionGroup = __webpack_require__(/*! react-addons-css-transition-group */ 177);
 	
 	var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
 	
@@ -21258,10 +21235,10 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'section',
-	                { className: 'reactions row' },
+	                { className: 'reactions' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'reactions__container' },
+	                    { className: 'reactions__container row' },
 	                    _react2.default.createElement('h4', { className: 'reactions__container__reaction' }),
 	                    _react2.default.createElement(
 	                        'p',
@@ -21281,16 +21258,16 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/sjone4/Desktop/funsies/portfolio-react-webpack/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "reactions.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 176 */
+/* 177 */
 /*!*******************************************************!*\
   !*** ../~/react-addons-css-transition-group/index.js ***!
   \*******************************************************/
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(/*! react/lib/ReactCSSTransitionGroup */ 177);
+	module.exports = __webpack_require__(/*! react/lib/ReactCSSTransitionGroup */ 178);
 
 /***/ },
-/* 177 */
+/* 178 */
 /*!*************************************************!*\
   !*** ../~/react/lib/ReactCSSTransitionGroup.js ***!
   \*************************************************/
@@ -21313,8 +21290,8 @@
 	
 	var React = __webpack_require__(/*! ./React */ 2);
 	
-	var ReactTransitionGroup = __webpack_require__(/*! ./ReactTransitionGroup */ 178);
-	var ReactCSSTransitionGroupChild = __webpack_require__(/*! ./ReactCSSTransitionGroupChild */ 180);
+	var ReactTransitionGroup = __webpack_require__(/*! ./ReactTransitionGroup */ 179);
+	var ReactCSSTransitionGroupChild = __webpack_require__(/*! ./ReactCSSTransitionGroupChild */ 181);
 	
 	function createTransitionTimeoutPropValidator(transitionType) {
 	  var timeoutPropName = 'transition' + transitionType + 'Timeout';
@@ -21380,7 +21357,7 @@
 	module.exports = ReactCSSTransitionGroup;
 
 /***/ },
-/* 178 */
+/* 179 */
 /*!**********************************************!*\
   !*** ../~/react/lib/ReactTransitionGroup.js ***!
   \**********************************************/
@@ -21402,7 +21379,7 @@
 	var _assign = __webpack_require__(/*! object-assign */ 4);
 	
 	var React = __webpack_require__(/*! ./React */ 2);
-	var ReactTransitionChildMapping = __webpack_require__(/*! ./ReactTransitionChildMapping */ 179);
+	var ReactTransitionChildMapping = __webpack_require__(/*! ./ReactTransitionChildMapping */ 180);
 	
 	var emptyFunction = __webpack_require__(/*! fbjs/lib/emptyFunction */ 11);
 	
@@ -21594,7 +21571,7 @@
 	module.exports = ReactTransitionGroup;
 
 /***/ },
-/* 179 */
+/* 180 */
 /*!*****************************************************!*\
   !*** ../~/react/lib/ReactTransitionChildMapping.js ***!
   \*****************************************************/
@@ -21699,7 +21676,7 @@
 	module.exports = ReactTransitionChildMapping;
 
 /***/ },
-/* 180 */
+/* 181 */
 /*!******************************************************!*\
   !*** ../~/react/lib/ReactCSSTransitionGroupChild.js ***!
   \******************************************************/
@@ -21721,8 +21698,8 @@
 	var React = __webpack_require__(/*! ./React */ 2);
 	var ReactDOM = __webpack_require__(/*! ./ReactDOM */ 34);
 	
-	var CSSCore = __webpack_require__(/*! fbjs/lib/CSSCore */ 181);
-	var ReactTransitionEvents = __webpack_require__(/*! ./ReactTransitionEvents */ 182);
+	var CSSCore = __webpack_require__(/*! fbjs/lib/CSSCore */ 182);
+	var ReactTransitionEvents = __webpack_require__(/*! ./ReactTransitionEvents */ 183);
 	
 	var onlyChild = __webpack_require__(/*! ./onlyChild */ 32);
 	
@@ -21867,7 +21844,7 @@
 	module.exports = ReactCSSTransitionGroupChild;
 
 /***/ },
-/* 181 */
+/* 182 */
 /*!****************************************!*\
   !*** ../~/react/~/fbjs/lib/CSSCore.js ***!
   \****************************************/
@@ -21997,7 +21974,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ../~/webpack/~/node-libs-browser/~/process/browser.js */ 3)))
 
 /***/ },
-/* 182 */
+/* 183 */
 /*!***********************************************!*\
   !*** ../~/react/lib/ReactTransitionEvents.js ***!
   \***********************************************/
@@ -22078,7 +22055,7 @@
 	module.exports = ReactTransitionEvents;
 
 /***/ },
-/* 183 */
+/* 184 */
 /*!*****************************************!*\
   !*** ./app/modules/contact/contact.jsx ***!
   \*****************************************/
@@ -22124,44 +22101,57 @@
 	
 	            return _react2.default.createElement(
 	                'section',
-	                { className: 'contact row section' },
+	                { className: 'contact' },
 	                _react2.default.createElement(
-	                    'h1',
-	                    { className: 'contact__title' },
-	                    'Feel free to contact me anytime!'
-	                ),
-	                _react2.default.createElement(
-	                    'form',
-	                    null,
+	                    'div',
+	                    { className: 'row' },
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'contact__name row' },
+	                        { className: 'small-12 medium-7 large-7 columns' },
 	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'col-sm-12 col-md-6 col-lg-6' },
+	                            'h1',
+	                            { className: 'contact__title' },
+	                            'Feel free to contact me anytime!'
+	                        ),
+	                        _react2.default.createElement(
+	                            'form',
+	                            null,
 	                            _react2.default.createElement(
-	                                'label',
-	                                { 'for': 'contact-name' },
-	                                'Your Name'
+	                                'div',
+	                                { className: 'contact__name row' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'small-12 medium-4 columns' },
+	                                    _react2.default.createElement(
+	                                        'label',
+	                                        { 'for': 'contact-name', className: 'contact__name__label' },
+	                                        'Your Name'
+	                                    ),
+	                                    _react2.default.createElement('input', { type: 'text', name: 'contact-name', placeholder: 'Your Name Here' })
+	                                )
 	                            ),
-	                            _react2.default.createElement('input', { type: 'text', name: 'contact-name', placeholder: 'Your Name Here' })
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'contact__message row' },
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    { className: 'small-12 medium-7 columns' },
+	                                    _react2.default.createElement(
+	                                        'label',
+	                                        { 'for': 'comment' },
+	                                        'Your Comments'
+	                                    ),
+	                                    _react2.default.createElement('textarea', { name: 'comment', placeholder: 'Contact Me' })
+	                                )
+	                            ),
+	                            _react2.default.createElement('input', (_React$createElement = { className: 'contact__submit', type: 'button' }, _defineProperty(_React$createElement, 'type', 'submit'), _defineProperty(_React$createElement, 'value', 'submit'), _React$createElement))
 	                        )
 	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'contact__message row' },
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'col-sm-12 col-md-8 col-lg-8' },
-	                            _react2.default.createElement(
-	                                'label',
-	                                { 'for': 'comment' },
-	                                'Your Comments'
-	                            ),
-	                            _react2.default.createElement('textarea', { name: 'comment', placeholder: 'Contact Me' })
-	                        )
-	                    ),
-	                    _react2.default.createElement('input', (_React$createElement = { className: 'contact__submit', type: 'button' }, _defineProperty(_React$createElement, 'type', 'submit'), _defineProperty(_React$createElement, 'value', 'submit'), _React$createElement))
+	                        { className: 'small-12 medium-4 large-4 columns end' },
+	                        _react2.default.createElement('img', { src: 'http://placehold.it/300' })
+	                    )
 	                )
 	            );
 	        }
@@ -22175,7 +22165,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/sjone4/Desktop/funsies/portfolio-react-webpack/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "contact.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 184 */
+/* 185 */
 /*!***************************************!*\
   !*** ./app/modules/footer/footer.jsx ***!
   \***************************************/
@@ -22217,48 +22207,52 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                'section',
-	                { className: 'footer row' },
-	                _react2.default.createElement(
-	                    'ul',
-	                    { className: 'nav-list' },
-	                    _react2.default.createElement(
-	                        'li',
-	                        null,
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'http://twitter.com/sdj2964' },
-	                            'Twitter'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'li',
-	                        null,
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'http://github.com/scottdj92' },
-	                            'GitHub'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'li',
-	                        null,
-	                        _react2.default.createElement(
-	                            'a',
-	                            { href: 'http://twitter.com/sdj2964' },
-	                            'Link'
-	                        )
-	                    )
-	                ),
+	                { className: 'footer' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'info row' },
+	                    { className: 'row' },
+	                    _react2.default.createElement(
+	                        'ul',
+	                        { className: 'nav-list' },
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'http://twitter.com/sdj2964' },
+	                                'Twitter'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'http://github.com/scottdj92' },
+	                                'GitHub'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'li',
+	                            null,
+	                            _react2.default.createElement(
+	                                'a',
+	                                { href: 'mailto:scottdj92@gmail.com', target: '_top' },
+	                                'Email'
+	                            )
+	                        )
+	                    ),
 	                    _react2.default.createElement(
 	                        'div',
-	                        { className: 'col-sm-3 col-md-3 col-lg-3 col-sm-offset-5 col-md-offset-5 col-lg-offset-5' },
+	                        { className: 'info row' },
 	                        _react2.default.createElement(
-	                            'p',
-	                            null,
-	                            'Made with React.js and Webpack.'
+	                            'div',
+	                            { className: 'small-12 medium-6 large-6 small-offset-4 columns' },
+	                            _react2.default.createElement(
+	                                'p',
+	                                null,
+	                                'Made with React.js, Webpack, and lots of love. © Scott Jones 2016'
+	                            )
 	                        )
 	                    )
 	                )
@@ -22274,7 +22268,7 @@
 	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("/Users/sjone4/Desktop/funsies/portfolio-react-webpack/node_modules/react-hot-loader/makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot not apply hot update to " + "footer.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
-/* 185 */
+/* 186 */
 /*!*******************************************************!*\
   !*** ../~/file-loader?name=[name].[ext]!./index.html ***!
   \*******************************************************/
