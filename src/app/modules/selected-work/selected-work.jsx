@@ -31,7 +31,7 @@ class SelectedWork extends React.Component {
                 <div className='row'>
                     <h1 className='selected-work__title'>A few of my selected works</h1>
                     <div className='skills-container__js'>
-                        {clientData.map(data => this.renderSelectedWorks(data))}
+                        {clientData.map( data => this.renderSelectedWorks(data))}
                     </div>
                 </div>
             </section>

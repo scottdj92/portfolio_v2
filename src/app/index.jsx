@@ -8,7 +8,7 @@ import {render} from 'react-dom';
 import './_main.scss';
 
 //import components
-import MainNav from './modules/main-nav/main-nav.jsx';
+// import MainNav from './modules/main-nav/main-nav.jsx';
 import Header from './modules/header/header.jsx';
 // import About from './modules/about/about.jsx';
 import Skills from './modules/skills/skills.jsx';
@@ -21,7 +21,7 @@ class App extends React.Component {
     render() {
         return(
             <div className='main'>
-                <MainNav/>
+                {/* <MainNav/> */}
                 <Header/>
                 <SelectedWork/>
                 <Skills/>
