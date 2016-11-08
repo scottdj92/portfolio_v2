@@ -1,6 +1,8 @@
 import React from 'react';
 import headerTextJSON from './fixtures/headerText.json';
 
+const logo = require('../../../img/logo.svg');
+
 class Header extends React.Component {
     constructor(props) {
         super(props);
@@ -25,11 +27,16 @@ class Header extends React.Component {
         return (
             <section className="header">
                 <div className="row header__container">
-                    <div className="header__title col-sm-12 col-md-4 col-lg-4 col-md-offset-2 col-lg-offset-2">
-                        <h1>Hi, I'm Scott Jones.</h1>
+                    <div className='logo small-4 column'>
+                        <img src={logo} className='logo-img'/>
                     </div>
-                    <div className="header__bodycopy col-sm-12 col-md-7 col-lg-4">
-                        <p className="header__bodycopy__title">I am a front-end developer that focuses on delivering the utmost quality in web experiences. In my spare time, I play guitar, basketball, and video games. {this.addFlavorText()}.</p>
+                    <div className='small-7 column end'>
+                        <div className="header__title">
+                            <h1>Hi, I'm Scott Jones.</h1>
+                        </div>
+                        <div className="header__bodycopy">
+                            <p className="header__bodycopy__title">I am a front-end developer that focuses on delivering the utmost quality in web experiences. In my spare time, I play guitar, basketball, and video games. {this.addFlavorText()}.</p>
+                        </div>
                     </div>
                 </div>
             </section>
