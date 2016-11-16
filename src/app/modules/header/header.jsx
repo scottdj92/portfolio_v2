@@ -2,7 +2,7 @@ import React from 'react';
 import headerTextJSON from './fixtures/headerText.json';
 
 const logo = require('../../../img/logo.svg');
-const resume = require('../../../pdf/resume.pdf');
+// const resume = require('../../../pdf/resume.pdf');
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -40,7 +40,7 @@ export default class Header extends React.Component {
                         </div>
                         <div className='row'>
                             <div className='small-12 columns centered header__button'>
-                                <a href={resume}>Resume</a>
+                                <a href={'#'}>Resume</a>
                             </div>
                         </div>
                     </div>
