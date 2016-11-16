@@ -27,4 +27,21 @@
             font-size: 2rem;
         }
     }
+    &__button {
+        text-align: center;
+        font-size: 1.5rem;
+        a {
+            border-style: solid;
+            border-color: $white;
+            padding: 5px;
+            border-radius: 3px;
+            text-decoration: none;
+            color: $white;
+            &:hover {
+                color: $orange;
+                text-decoration: underline;
+                border-color: $orange;
+            }
+        }
+    }
 }

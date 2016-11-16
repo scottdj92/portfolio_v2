@@ -3,7 +3,7 @@ import headerTextJSON from './fixtures/headerText.json';
 
 const logo = require('../../../img/logo.svg');
 
-class Header extends React.Component {
+export default class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
@@ -37,11 +37,14 @@ class Header extends React.Component {
                         <div className="header__bodycopy">
                             <p className="header__bodycopy__title">I am a front-end developer that focuses on delivering the utmost quality in web experiences. In my spare time, I play guitar, basketball, and video games. {this.addFlavorText()}.</p>
                         </div>
+                        <div className='row'>
+                            <div className='small-12 columns centered header__button'>
+                                <a href='#'>Resume</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         );
     }
 }
-
-export default Header;
