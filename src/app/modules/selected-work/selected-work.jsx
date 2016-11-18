@@ -7,10 +7,9 @@ class SelectedWork extends React.Component {
         this.state = {};
     }
 
-    renderSelectedWorks(data) {
-        console.log('renderSelectedWorks', data);
+    renderSelectedWorks(data, key) {
         return (
-            <div className='selected-work__project'>
+            <div className='selected-work__project' key={key}>
                 <div className='row'>
                     <h3>{data.title}</h3>
                     <div className='small-12 medium-4 large-4 columns'>
@@ -31,7 +30,7 @@ class SelectedWork extends React.Component {
                 <div className='row'>
                     <h1 className='selected-work__title'>A few of my selected works</h1>
                     <div className='skills-container__js'>
-                        {clientData.map( data => this.renderSelectedWorks(data))}
+                        {clientData.map( (data, key) => this.renderSelectedWorks(data, key))}
                     </div>
                 </div>
             </section>
