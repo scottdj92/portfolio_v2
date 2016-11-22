@@ -3,7 +3,7 @@
     //background: -webkit-linear-gradient(top, lighten($black, 20%), #ffffff);
     padding-left: 2%;
     padding-right: 2%;
-    height: 50vh;
+    min-height: 35vh;
     &__container {
         h1 {
             color: $orange;
