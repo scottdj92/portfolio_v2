@@ -13,7 +13,6 @@ var config = {
     },
     output: {
         path: BUILD_DIR,
-        publicPath: '/dist',
         filename: 'bundle.js'
     },
     plugins: [
