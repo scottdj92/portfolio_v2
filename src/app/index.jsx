@@ -24,6 +24,7 @@ class App extends React.Component {
                 {/* <MainNav/> */}
                 <Header/>
                 <SelectedWork/>
+                <Reactions/>
                 <Skills/>
                 <Contact/>
                 <Footer/>

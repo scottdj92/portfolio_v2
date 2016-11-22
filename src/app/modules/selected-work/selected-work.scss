@@ -7,6 +7,11 @@
         color: lighten($black, 50%);
     }
     &__project {
-        
+
+    }
+
+    &__wip {
+        text-align: center;
+        padding-top: 2%;
     }
 }

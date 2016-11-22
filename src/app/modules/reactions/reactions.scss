@@ -1,3 +1,15 @@
 .reactions {
-    
+    padding-bottom: 2%;
+    h1 {
+        color: darken($white, 30%);
+    }
+    &__container {
+        &__reaction {
+            margin-bottom: 0;
+            &__herald {
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
 }
