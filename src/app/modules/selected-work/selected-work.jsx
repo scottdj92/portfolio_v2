@@ -5,7 +5,7 @@ class SelectedWork extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            inProgress: true
+            inProgress: false
         };
     }
 
