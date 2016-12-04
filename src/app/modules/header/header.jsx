@@ -28,10 +28,10 @@ export default class Header extends React.Component {
         return (
             <section className="header">
                 <div className="row header__container">
-                    <div className='logo small-12 medium-4 columns'>
+                    <div className='logo small-12 large-4 columns'>
                         <img src={logo} className='logo-img'/>
                     </div>
-                    <div className='small-12 medium-7 columns end'>
+                    <div className='small-12 large-7 columns end'>
                         <div className="header__title">
                             <h1>Hi, I'm Scott Jones.</h1>
                         </div>

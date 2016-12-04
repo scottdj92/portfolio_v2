@@ -10,7 +10,7 @@ class Skills extends React.Component {
             <section className='skills'>
                 <div className='skills__container row'>
                     <h1>I like to code:</h1>
-                    <div className='skills__container__skill small-3 medium-3 columns'>
+                    <div className='skills__container__skill small-12 large-4 columns'>
                         <h4>JavaScript</h4>
                         <ul className='skills-list'>
                             <li>
@@ -24,7 +24,7 @@ class Skills extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    <div className='skills__container__skill small-3 medium-3 columns'>
+                    <div className='skills__container__skill small-12 large-4 columns'>
                         <h4>HTML/CSS</h4>
                         <ul className='skills-list'>
                             <li>
@@ -38,7 +38,7 @@ class Skills extends React.Component {
                             </li>
                         </ul>
                     </div>
-                    <div className='skills__container__skill small-3 medium-3 columns'>
+                    <div className='skills__container__skill small-12 large-3 columns end'>
                         <h4>Development Tools</h4>
                         <ul className='skills-list'>
                             <li>
@@ -49,20 +49,6 @@ class Skills extends React.Component {
                             </li>
                             <li>
                                 <span>Heroku</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className='skills__container__skill small-2 medium-3 columns'>
-                        <h4>Other Skills</h4>
-                        <ul className='skills-list'>
-                            <li>
-                                <span>Atlassian JIRA</span>
-                            </li>
-                            <li>
-                                <span>Adobe Creative Suite</span>
-                            </li>
-                            <li>
-                                <span>Windows 10, OS X, & Linux</span>
                             </li>
                         </ul>
                     </div>

@@ -2,6 +2,7 @@
 
 //import module stylesheets
 @import "./_vars.scss";
+@import "./_mixins.scss";
 @import './_global.scss';
 @import './index.scss';
 @import './modules/contact/contact.scss';
