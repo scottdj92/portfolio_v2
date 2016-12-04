@@ -2,6 +2,7 @@
     background-color: $gray;
     background-image: url(../img/moss.jpg);
     background-size: cover;
+    background-position: center;
     padding: 1%;
     height: 85vh;
 
@@ -9,6 +10,12 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+    }
+    &__copy__container {
+        margin-top: 4rem;
+        @include desktop {
+            margin-top: auto;
+        };
     }
     &__title {
         position: relative;
@@ -29,7 +36,10 @@
     }
     &__button {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 4rem;
+        @include desktop {
+            font-size: 1.5rem;
+        };
         a {
             border-style: solid;
             border-color: $white;

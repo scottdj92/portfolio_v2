@@ -8,6 +8,7 @@
         h1 {
             color: $orange;
             font-size: 3rem;
+            margin-bottom: 0;
             @include desktop {
                 font-size: 2rem;
             };

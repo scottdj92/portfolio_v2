@@ -31,7 +31,7 @@ export default class Header extends React.Component {
                     <div className='logo small-12 large-4 columns'>
                         <img src={logo} className='logo-img'/>
                     </div>
-                    <div className='small-12 large-7 columns end'>
+                    <div className='header__copy__container small-12 large-7 columns end'>
                         <div className="header__title">
                             <h1>Hi, I'm Scott Jones.</h1>
                         </div>
