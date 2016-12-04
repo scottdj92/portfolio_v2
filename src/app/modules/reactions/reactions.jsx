@@ -1,5 +1,8 @@
 import React from 'react';
 
+//TODO: Add timeout to transition for each reaction
+// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 import reactionTextJSON from './fixtures/reactions.json';
 
 class Reactions extends React.Component {
@@ -25,7 +28,7 @@ class Reactions extends React.Component {
         return (
             <div className='small-8 columns end'>
                 <div className='row'>
-                    <div className='small-10 small-offset-2 end'>
+                    <div className='small-12 small-offset-2 end'>
                         <h3 className='reactions__container__reaction'>"{text.reaction}"</h3>
                     </div>
                     {this.maybeRenderHerald(text)}

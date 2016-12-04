@@ -16,7 +16,7 @@ class Footer extends React.Component {
                     </ul>
                     <div className='info row'>
                         <div className='small-12 medium-6 large-6 small-offset-4 columns'>
-                            <p>Made with React.js, Webpack, and lots of love. &copy; Scott Jones 2016</p>
+                            <p>Made with <a className='footer__link' href='https://facebook.github.io/react/'>React.js</a>, <a className='footer__link'  href='https://webpack.github.io/'>Webpack</a>, and lots of love. &copy; Scott Jones 2016</p>
                         </div>
                     </div>
                 </div>
