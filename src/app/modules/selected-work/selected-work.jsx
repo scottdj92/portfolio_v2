@@ -10,20 +10,23 @@ class SelectedWork extends React.Component {
     }
 
     renderSelectedWorks(data, key) {
-        return (
-            <div className='selected-work__project' key={key}>
-                <div className='row'>
-                    <h3>{data.title}</h3>
-                    <div className='small-12 medium-4 large-4 columns'>
-                        <img src={data.image}></img>
-                    </div>
-                    <div className='small-12 medium-6 large-6 columns end'>
-                        <p>{data.excerpt}</p>
-                        <span>{data.time}</span>
+        if (data.show === true) {
+            return (
+                <div className='selected-work__project' key={key}>
+                    <div className='row'>
+                        <h3>{data.title}</h3>
+                        <div className='small-12 medium-4 large-4 columns'>
+                            <img className='selected-work__project__image' src={data.image}></img>
+                        </div>
+                        <div className='selected-work__project__info small-12 medium-6 large-6 columns end'>
+                            <p>{data.excerpt}</p>
+                            <a href={data.link}>Click me to view</a>
+                            <span>{data.time}</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-        );
+            );
+        }
     }
 
     maybeRenderWork() {

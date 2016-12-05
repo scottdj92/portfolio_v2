@@ -7,7 +7,21 @@
         color: lighten($black, 50%);
     }
     &__project {
-
+        &__image {
+            max-width: 300px;
+            max-height: 300px;
+        }
+        &__info {
+            a {
+                text-decoration: underline;
+                color: inherit;
+                display: block;
+                margin-bottom: 0.5em;
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
     }
 
     &__wip {
