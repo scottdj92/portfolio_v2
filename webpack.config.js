@@ -38,15 +38,23 @@ var config = {
                 loader: ExtractTextPlugin.extract('css!sass')
             },
             {
-                test: /\.(jpg|png)$/,
+                test: /\.(jpg|png|svg)$/i,
                 exclude: [/node_modules/],
-                loader: 'file-loader?name=assets/[name].[ext]'
+                loaders: [
+                    'file-loader?name=assets/[name]/[ext]',
+                    'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+                ]
             },
-            {
-                test: /\.svg$/,
-                exclude: [/node_modules/],
-                loader: 'file-loader?name=assets/[name].[ext]'
-            },
+            // {
+            //     test: /\.(jpg|png)$/,
+            //     exclude: [/node_modules/],
+            //     loader: 'file-loader?name=assets/[name].[ext]'
+            // },
+            // {
+            //     test: /\.svg$/,
+            //     exclude: [/node_modules/],
+            //     loader: 'file-loader?name=assets/[name].[ext]'
+            // },
             {
                 test: /\.json$/,
                 exclude: [/node_modules/],
