@@ -45,7 +45,7 @@ class SelectedWork extends React.Component {
                     <div className='skills-container__js'>
                         {clientData.map( (data, key) => this.renderSelectedWorks(data, key))}
                     </div>
-                    <p class='disclaimer'>All images are part of their respective owners.</p>
+                    <p className='disclaimer'>All images are part of their respective owners.</p>
                 </div>
 
             );
