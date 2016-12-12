@@ -24,7 +24,6 @@ class Reactions extends React.Component {
     }
 
     renderSelectedText(text) {
-        console.log(text);
         return (
             <div className='small-8 columns end'>
                 <div className='row'>

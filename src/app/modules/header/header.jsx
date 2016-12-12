@@ -1,7 +1,8 @@
 import React from 'react';
 import headerTextJSON from './fixtures/headerText.json';
 
-const logo = require('../../../img/logo.svg');
+import images from '../../../images';
+
 // const resume = require('../../../pdf/resume.pdf');
 
 export default class Header extends React.Component {
@@ -29,7 +30,7 @@ export default class Header extends React.Component {
             <section className="header">
                 <div className="row header__container">
                     <div className='logo small-12 large-4 columns'>
-                        <img src={logo} className='logo-img'/>
+                        <img src={images.logo} className='logo-img'/>
                     </div>
                     <div className='header__copy__container small-12 large-7 columns end'>
                         <div className="header__title">

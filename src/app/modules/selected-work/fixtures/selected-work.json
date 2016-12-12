@@ -5,7 +5,7 @@
         "excerpt":"Saks Off5th was revamping their older website to leverage React.js, and I was a part of the debugging and support team. Lord & Taylor was re-skinned using modern CSS strategies and re-scaffolded with Sass. L&T re-skinning required updates to code that was years old. I worked on a team, combining our skills to present something that we could be proud of.",
         "client": "HBC Digital",
         "link": "http://https://www.saksoff5th.com/Entry.jsp",
-        "image": "http://placehold.it/300",
+        "image": "http://www.cashbackholic.com/images//saksoff5th.png",
         "show": true
     },
     {
@@ -14,7 +14,7 @@
         "excerpt": "BYSOWeb.org is a custom Wordpress Theme developed for BYSO. They wanted to migrate from their old website that leveraged Cold Fusion to a more modern site leveraging WordPress.",
         "client": "Boston Youth Symphony Orchestra",
         "link": "http://www.bysoweb.org",
-        "image": "http://placehold.it/300",
+        "image": "http://www.bysoweb.org/wp-content/themes/byso/library/images/logo.png",
         "show": true
     },
     {
@@ -22,7 +22,7 @@
         "time": "2016",
         "excerpt": "Petco Foundation is a custom WordPress theme built according to their specifications. We wanted to deliver a brand-focused experience that drove home the point of \"Finding Love\" where pets' stories would be shared along with their owners'. The pair would be showcased to demonstrate how Petco Foundation contributes to only people that would maximize it, including owners of smaller animal shelters.",
         "client": "Petco Foundation",
-        "link": "http://www.google.com",
+        "link": "http://www.petcofoundation.org",
         "image": "http://placehold.it/300",
         "show": false
     },
@@ -41,7 +41,7 @@
         "excerpt": "A musical experience meant to inspire people to learn a musical instrument. Partnered with VH1's Save the Music Foundation.",
         "client": "Rochester Institute of Technology",
         "link": "http://www.interlude.rocks",
-        "image": "http://placehold.it/300",
+        "image": "http://interlude.rocks/images/logo.png",
         "show": true
     }
 ]

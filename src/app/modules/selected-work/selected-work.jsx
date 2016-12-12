@@ -15,7 +15,7 @@ class SelectedWork extends React.Component {
                 <div className='selected-work__project' key={key}>
                     <div className='row'>
                         <h3>{data.title}</h3>
-                        <div className='small-12 medium-4 large-4 columns'>
+                        <div className='image_container small-12 medium-4 large-4 columns'>
                             <img className='selected-work__project__image' src={data.image}></img>
                         </div>
                         <div className='selected-work__project__info small-12 medium-6 large-6 columns end'>
@@ -45,6 +45,7 @@ class SelectedWork extends React.Component {
                     <div className='skills-container__js'>
                         {clientData.map( (data, key) => this.renderSelectedWorks(data, key))}
                     </div>
+                    <p class='disclaimer'>All images are part of their respective owners.</p>
                 </div>
 
             );

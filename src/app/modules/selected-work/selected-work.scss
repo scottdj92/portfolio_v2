@@ -7,6 +7,12 @@
         color: lighten($black, 50%);
     }
     &__project {
+        .image_container {
+            width: 300px;
+            height: 200px;
+            display: flex;
+            align-items: center;
+        }
         &__image {
             max-width: 300px;
             max-height: 300px;
@@ -27,5 +33,9 @@
     &__wip {
         text-align: center;
         padding-top: 2%;
+    }
+
+    .disclaimer {
+        color: inherit;
     }
 }
