@@ -12,7 +12,6 @@ class Footer extends React.Component {
                     <ul className='nav-list'>
                         <li><a href='http://twitter.com/sdj2964'>Twitter</a></li>
                         <li><a href='http://github.com/scottdj92'>GitHub</a></li>
-                        <li><a href='mailto:scottdj92@gmail.com' target='_top'>Email</a></li>
                     </ul>
                     <div className='info row'>
                         <div className='small-12 medium-6 large-6 small-offset-4 columns'>

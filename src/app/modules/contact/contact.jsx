@@ -21,7 +21,7 @@ class Contact extends React.Component {
                 <div className='row'>
                     <div className="small-12 medium-5 large-5 columns">
                         <div className='contact__container'>
-                            <a className='contact__button' href='mailto:scottdj92@gmail.com' target='_top'>Send me an email!</a>
+                            <h4>scottdj92 [at] gmail [dot] com</h4>
                         </div>
                     </div>
                 </div>

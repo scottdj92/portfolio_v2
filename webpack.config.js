@@ -45,16 +45,6 @@ var config = {
                     'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
                 ]
             },
-            // {
-            //     test: /\.(jpg|png)$/,
-            //     exclude: [/node_modules/],
-            //     loader: 'file-loader?name=assets/[name].[ext]'
-            // },
-            // {
-            //     test: /\.svg$/,
-            //     exclude: [/node_modules/],
-            //     loader: 'file-loader?name=assets/[name].[ext]'
-            // },
             {
                 test: /\.json$/,
                 exclude: [/node_modules/],

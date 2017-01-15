@@ -20,7 +20,7 @@ class SelectedWork extends React.Component {
                         </div>
                         <div className='selected-work__project__info small-12 medium-6 large-6 columns end'>
                             <p>{data.excerpt}</p>
-                            <a href={data.link}>Click me to view</a>
+                            <a href={data.link}>View Project</a>
                             <span>{data.time}</span>
                         </div>
                     </div>
