@@ -41,9 +41,13 @@ var config = {
                 test: /\.(jpg|png|svg)$/i,
                 exclude: [/node_modules/],
                 loaders: [
-                    'file-loader?name=assets/[name]/[ext]',
+                    'file-loader?name=assets/[name].[ext]',
                     'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
                 ]
+            },
+            {
+                test: /\.pdf$/,
+                loader: 'file-loader?name=assets/[name].[ext]'
             },
             {
                 test: /\.json$/,

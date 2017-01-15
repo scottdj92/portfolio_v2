@@ -3,7 +3,7 @@ import headerTextJSON from './fixtures/headerText.json';
 
 import images from '../../../images';
 
-// const resume = require('../../../pdf/resume.pdf');
+const resume = require('../../../resume.pdf');
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -41,7 +41,7 @@ export default class Header extends React.Component {
                         </div>
                         <div className='row'>
                             <div className='small-12 columns centered header__button'>
-                                <a href={'#'}>Resume</a>
+                                <a href={resume}>Resume</a>
                             </div>
                         </div>
                     </div>
