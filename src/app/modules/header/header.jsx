@@ -3,7 +3,7 @@ import headerTextJSON from './fixtures/headerText.json';
 
 import images from '../../../images';
 
-const resume = require('../../../resume.pdf');
+import resume from '../../../resume.pdf';
 
 export default class Header extends React.Component {
     constructor(props) {
