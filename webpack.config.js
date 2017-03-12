@@ -1,12 +1,12 @@
-var webpack = require('webpack');
-var path = require('path');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-var BUILD_DIR = path.resolve(__dirname, 'dist');
-var APP_DIR = path.resolve(__dirname, 'src/app');
-var ASSET_DIR = path.resolve(__dirname, 'dist/assets');
+const BUILD_DIR = path.resolve(__dirname, 'dist');
+const APP_DIR = path.resolve(__dirname, 'src/app');
+const ASSET_DIR = path.resolve(__dirname, 'dist/assets');
 
-var config = {
+const config = {
     context: __dirname + '/src',
     entry: {
         app: APP_DIR + '/index.jsx'
