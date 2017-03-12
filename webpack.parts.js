@@ -153,33 +153,56 @@ exports.generateSourcemaps = function(type) {
     };
 };
 
-exports.compressImages = function(paths) {
-    return {
-        module: {
-            rules: [
-                {
-                    test: /\.(png|jpg|jpeg|gif|svg)$/,
-                    include: paths,
-                    use: [
-                        {
-                        loader: 'image-webpack-loader',
-                        query: {
-                                gifsicle: {
-                                    interlaced: false
-                                },
-                                optipng: {
-                                    optimizationLevel: 7
-                                }
-                            }
-                        },
-                        {
-                            loader: 'file-loader'
-                        }
-                    ]
-                }
-            ]
+exports.loadImages = function(paths) {
+  return {
+    module: {
+      rules: [
+        {
+          test: /\.(png|jpg|gif)$/,
+          include: paths,
+          use: [
+            {
+              loader: 'file-loader'
+            }
+          ]
+        },
+        {
+          test: /\.svg$/,
+          include: paths,
+          use: ['file-loader', 'svgo-loader']
         }
-    };
+      ]
+    }
+  }
+};
+
+exports.compressImages = function(paths) {
+  return {
+    module: {
+      rules: [
+        {
+          test: /\.(png|jpg|jpeg|gif|svg)$/i,
+          include: paths,
+          use: [
+            {
+              loader: 'file-loader'
+            },
+            {
+            loader: 'image-webpack-loader',
+            query: {
+                gifsicle: {
+                interlaced: false
+              },
+              optipng: {
+                optimizationLevel: 7
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  };
 };
 
 exports.extractBundles = function(bundles, options) {

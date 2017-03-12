@@ -8,13 +8,10 @@ const parts = require('./webpack.parts');
 
 const PATHS = {
   app: path.join(__dirname, 'src/app'),
+  images: path.join(__dirname, 'src/img'),
   assets: path.join(__dirname, 'dist/assets'),
   build: path.join(__dirname, 'dist')
 };
-
-// const BUILD_DIR = path.resolve(__dirname, 'dist');
-// const APP_DIR = path.resolve(__dirname, 'src/app');
-// const ASSET_DIR = path.resolve(__dirname, 'dist/assets');
 
 const common = merge([
   {
@@ -31,7 +28,7 @@ const common = merge([
         }),
     ],
   }
-  ]);
+]);
 
 module.exports = function(env) {
   if (env === 'production') {
@@ -54,13 +51,13 @@ module.exports = function(env) {
       ],
     },
     parts.loadPDFFiles(),
-    parts.compressImages(PATHS.app),
-    parts.loadCSS(),
+    parts.loadImages(PATHS.app),
+    parts.loadCSS(PATHS.app),
+    parts.loadJavascript(PATHS.app),
     parts.devServer({
             host: process.env.HOST,
             port: process.env.PORT
         }),
-    parts.loadJavascript(PATHS.app),
     parts.lintJavaScript({
       paths: PATHS.app,
       options: {
