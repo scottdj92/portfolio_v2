@@ -90,7 +90,6 @@ exports.lintCSS = function(paths) {
 
 exports.loadCSS = function(paths) {
     return {
-        devtool: 'source-map',
         module: {
             rules: [
                 {
@@ -158,18 +157,9 @@ exports.loadImages = function(paths) {
     module: {
       rules: [
         {
-          test: /\.(png|jpg|gif)$/,
+          test: /\.(png|jpg|gif|svg)$/,
           include: paths,
-          use: [
-            {
-              loader: 'file-loader'
-            }
-          ]
-        },
-        {
-          test: /\.svg$/,
-          include: paths,
-          use: ['file-loader', 'svgo-loader']
+          use: 'url-loader'
         }
       ]
     }
@@ -181,7 +171,7 @@ exports.compressImages = function(paths) {
     module: {
       rules: [
         {
-          test: /\.(png|jpg|jpeg|gif|svg)$/i,
+          test: /\.(png|jpg|jpeg|gif|svg)$/,
           include: paths,
           use: [
             {

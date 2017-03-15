@@ -1,6 +1,6 @@
 .header {
     background-color: $gray;
-    background-image: url(../img/moss.jpg);
+    background-image: url('./img/moss.jpg'); //image path must be relative to _main.scss, due to how sass-loader handles urls
     background-size: cover;
     background-position: center;
     padding: 1%;

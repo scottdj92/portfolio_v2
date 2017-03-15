@@ -34,7 +34,7 @@ module.exports = function(env) {
   if (env === 'production') {
     return merge([
       common,
-      parts.clean(PATHS.dist),
+      parts.clean(PATHS.build),
       parts.loadPDFFiles(),
       parts.loadJavascript(PATHS.app),
       parts.lintJavaScript({ paths: PATHS.app }),
@@ -50,9 +50,9 @@ module.exports = function(env) {
         new webpack.NamedModulesPlugin()
       ],
     },
-    parts.loadPDFFiles(),
-    parts.loadImages(PATHS.app),
     parts.loadCSS(PATHS.app),
+    parts.loadPDFFiles(),
+    parts.loadImages(PATHS.img),
     parts.loadJavascript(PATHS.app),
     parts.devServer({
             host: process.env.HOST,
@@ -64,6 +64,6 @@ module.exports = function(env) {
         emitWarning: true
       }
     }),
-    parts.lintCSS(PATHS.app)
+    // parts.lintCSS(PATHS.app)
   ]);
 };
