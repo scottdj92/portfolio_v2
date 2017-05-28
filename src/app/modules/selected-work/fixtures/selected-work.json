@@ -1,5 +1,9 @@
 [
     {
+        "brand": "",
+        "show": false
+    },
+    {
         "brand": "Lord & Taylor and Saks Off5th",
         "time": "2016",
         "excerpt":"Saks Off5th was revamping their older website to leverage React.js, and I was a part of the debugging and support team. Lord & Taylor was re-skinned using modern CSS strategies and re-scaffolded with Sass. L&T re-skinning required updates to code that was years old. I worked on a team, combining our skills to present something that we could be proud of.",
@@ -42,6 +46,6 @@
         "client": "Rochester Institute of Technology",
         "link": "http://www.interlude.rocks",
         "image": "http://interlude.rocks/images/logo.png",
-        "show": true
+        "show": false
     }
 ]

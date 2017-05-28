@@ -5,6 +5,8 @@
     padding-bottom: 2%;
     &__title {
         color: lighten($black, 50%);
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
     }
     &__project {
         .image_container {
@@ -12,7 +14,7 @@
             height: 200px;
             display: flex;
             align-items: center;
-            background-color: $dark-gray;
+            justify-content: center;
         }
         &__image {
             max-width: 300px;
