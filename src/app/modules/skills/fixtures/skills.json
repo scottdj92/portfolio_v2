@@ -1,0 +1,26 @@
+[
+    {
+        "section": "JavaScript",
+        "skills": [
+            "React",
+            "Angular 1",
+            "Backbone.js/Marionette.js"
+        ]
+    },
+    {
+        "section": "HTML/CSS",
+        "skills": [
+            "Semantic HTML and Sass/SCSS/LESS",
+            "CSS Frameworks",
+            "HTML5 Tags/CSS3 Properties"
+        ]
+    },
+    {
+        "section": "Development Tools",
+        "skills": [
+            "Gulp/webpack/Grunt",
+            "GitHub/Stash/BitBucket",
+            "Heroku"
+        ]
+    }
+]
