@@ -1,10 +1,10 @@
 .selected-work {
     background-color: lighten($black, 90%);
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 2%;
+    padding: 2%;
     &__title {
         color: lighten($black, 50%);
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
     }
     &__project {
         .image_container {
@@ -12,7 +12,7 @@
             height: 200px;
             display: flex;
             align-items: center;
-            background-color: $dark-gray;
+            justify-content: center;
         }
         &__image {
             max-width: 300px;

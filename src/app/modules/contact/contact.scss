@@ -2,7 +2,12 @@
     padding: 2%;
     padding-bottom: 3%;
     &__title {
-        color: lighten($black, 50%);;
+        color: lighten($black, 50%);
+        font-size: $header;
+    }
+    &__image {
+        width: 63%;
+        float: right;
     }
     &__container {
         margin-top: 1em;

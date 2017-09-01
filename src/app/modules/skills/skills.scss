@@ -1,8 +1,7 @@
 .skills {
     background-color: lighten($black, 20%);
     //background: -webkit-linear-gradient(top, lighten($black, 20%), #ffffff);
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 2%;
     min-height: 35vh;
     &__container {
         h1 {
@@ -28,6 +27,7 @@
 
         .skills-list {
             max-width: 90%;
+            padding-left: 1%;
 
             li {
                 text-decoration: none;

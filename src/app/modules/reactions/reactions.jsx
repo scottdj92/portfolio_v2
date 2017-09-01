@@ -25,11 +25,9 @@ class Reactions extends React.Component {
 
     renderSelectedText(text) {
         return (
-            <div className='small-8 columns end'>
-                <div className='row'>
-                    <div className='small-12 small-offset-2 end'>
-                        <h3 className='reactions__container__reaction'>"{text.reaction}"</h3>
-                    </div>
+            <div className='columns'>
+                <div className='column is-8 is-offset-2'>
+                    <h3 className='reactions__container__reaction'>"{text.reaction}"</h3>
                     {this.maybeRenderHerald(text)}
                 </div>
             </div>
@@ -39,8 +37,8 @@ class Reactions extends React.Component {
     maybeRenderHerald(text) {
         if ('herald' in text) {
             return (
-                <div className='reactions_container__reaction__herald row'>
-                    <div className='small-5 small-offset-7 end'>
+                <div className='reactions__container__reaction__herald'>
+                    <div className=''>
                         <p>--{text.herald}</p>
                     </div>
                 </div>
@@ -51,7 +49,7 @@ class Reactions extends React.Component {
     render() {
         return (
             <section className='reactions'>
-                <div className='reactions__container row'>
+                <div className='reactions__container'>
                     <h1>A few reactions from people that have worked with me:</h1>
                     {this.showReaction()}
                 </div>

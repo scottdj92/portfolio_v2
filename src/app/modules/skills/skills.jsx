@@ -1,56 +1,46 @@
 import React from 'react';
 
+import experience from './fixtures/skills';
+
 class Skills extends React.Component {
     constructor(props) {
         super(props);
     }
 
+    renderSkills(section, key) {
+        return (
+            <div className='skills__container__skill column is-4' key={key}>
+                <h4>{section.section}</h4>
+                <ul className='skills-list'>
+                    {this.renderDrillDownSkills(section.skills)}
+                </ul>
+            </div>
+        );
+    }
+
+    renderDrillDownSkills(skill) {
+        return skill.map( (type, index) => {
+            return (
+                <li key={index}>
+                    <span>{type}</span>
+                </li>
+            );
+        });
+    }
+
+    maybeRenderExperience() {
+        return experience.map( (section, index) => {
+            return this.renderSkills(section, index);
+        });
+    }
+
     render() {
         return (
             <section className='skills'>
-                <div className='skills__container row'>
+                <div className='skills__container'>
                     <h1>I like to code:</h1>
-                    <div className='skills__container__skill small-12 large-4 columns'>
-                        <h4>JavaScript</h4>
-                        <ul className='skills-list'>
-                            <li>
-                                <span>React</span>
-                            </li>
-                            <li>
-                                <span>Angular 1</span>
-                            </li>
-                            <li>
-                                <span>Backbone.js/Marionette.js</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className='skills__container__skill small-12 large-4 columns'>
-                        <h4>HTML/CSS</h4>
-                        <ul className='skills-list'>
-                            <li>
-                                <span>Semantic HTML and Sass/SCSS/LESS</span>
-                            </li>
-                            <li>
-                                <span>CSS Frameworks</span>
-                            </li>
-                            <li>
-                                <span>HTML5 Tags/CSS3 Properties</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className='skills__container__skill small-12 large-3 columns end'>
-                        <h4>Development Tools</h4>
-                        <ul className='skills-list'>
-                            <li>
-                                <span>Gulp/Webpack/Grunt</span>
-                            </li>
-                            <li>
-                                <span>GitHub/Stash/BitBucket</span>
-                            </li>
-                            <li>
-                                <span>Heroku</span>
-                            </li>
-                        </ul>
+                    <div className='columns'>
+                        {this.maybeRenderExperience()}
                     </div>
                 </div>
             </section>

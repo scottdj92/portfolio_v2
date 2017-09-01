@@ -1,9 +1,9 @@
 import React from 'react';
 import headerTextJSON from './fixtures/headerText.json';
 
-import images from '../../../images';
+import logo from '../../img/logo.svg';
 
-const resume = require('../../../resume.pdf');
+import resume from '../../resume.pdf';
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -27,12 +27,14 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <section className="header">
-                <div className="row header__container">
-                    <div className='logo small-12 large-4 columns'>
-                        <img src={images.logo} className='logo-img'/>
+            <section className="header section">
+                <div className="columns header__container">
+                    <div className='logo column is-one-third is-offset-1'>
+                        <figure className='image is-square'>
+                            <img src={logo} className='logo-img'/>
+                        </figure>
                     </div>
-                    <div className='header__copy__container small-12 large-7 columns end'>
+                    <div className='header__copy__container column'>
                         <div className="header__title">
                             <h1>Hi, I'm Scott Jones.</h1>
                         </div>
@@ -40,7 +42,7 @@ export default class Header extends React.Component {
                             <p className="header__bodycopy__title">I am a front-end developer that focuses on delivering the utmost quality in web experiences. In my spare time, I play guitar, basketball, and video games. {this.addFlavorText()}.</p>
                         </div>
                         <div className='row'>
-                            <div className='small-12 columns centered header__button'>
+                            <div className=' header__button'>
                                 <a href={resume}>Resume</a>
                             </div>
                         </div>

@@ -1,6 +1,3 @@
-//import index.html
-require('file-loader?name=[name].[ext]!../index.html');
-
 import React from 'react';
 import {render} from 'react-dom';
 
@@ -13,7 +10,7 @@ import Header from './modules/header/header.jsx';
 // import About from './modules/about/about.jsx';
 import Skills from './modules/skills/skills.jsx';
 import SelectedWork from './modules/selected-work/selected-work.jsx';
-import Reactions from './modules/reactions/reactions';
+import Reactions from './modules/reactions/reactions.jsx';
 import Contact from './modules/contact/contact.jsx';
 import Footer from './modules/footer/footer.jsx';
 

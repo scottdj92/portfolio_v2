@@ -1,25 +1,24 @@
 .header {
     background-color: $gray;
-    background-image: url(../img/moss.jpg);
+    background-image: url('./img/moss.jpg'); //image path must be relative to _main.scss, due to how sass-loader handles urls
     background-size: cover;
     background-position: center;
     padding: 1%;
-    height: 85vh;
 
     &__container {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        padding: 2%;
     }
     &__copy__container {
-        margin-top: 4rem;
-        @include desktop {
-            margin-top: auto;
-        };
+        // margin-top: 4rem;
+        // @include desktop {
+        //     margin-top: auto;
+        // };
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
     &__title {
-        position: relative;
-        top: 50%;
         h1 {
             color: $orange;
             margin: 0;
@@ -27,8 +26,6 @@
         }
     }
     &__bodycopy {
-        position: relative;
-        top: 50%;
         &__title {
             color: lighten($white, 10%);
             font-size: 2rem;
