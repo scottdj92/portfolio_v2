@@ -14,7 +14,7 @@ class Footer extends React.Component {
                         <li><a href='http://github.com/scottdj92'>GitHub</a></li>
                     </ul>
                     <div className='info column is-8'>
-                        <p>Made with <a className='footer__link' href='https://facebook.github.io/react/'>React.js</a>, <a className='footer__link' href='https://webpack.github.io/'>Webpack</a>, <a className='footer__link' href='http://bulma.io/'>Bulma.io</a>, and lots of love. &copy; Scott Jones 2016</p>
+                        <p>Made with <a className='footer__link' href='https://facebook.github.io/react/'>React.js</a>, <a className='footer__link' href='https://webpack.github.io/'>Webpack</a>, <a className='footer__link' href='http://bulma.io/'>Bulma.io</a>, and lots of love. &copy; Scott Jones 2017</p>
                     </div>
                 </div>
             </section>
