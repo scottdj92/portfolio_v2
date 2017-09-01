@@ -1,7 +1,12 @@
 [
     {
-        "brand": "",
-        "show": false
+        "brand": "Samsung Knox",
+        "time": 2017,
+        "excerpt": "Samsung needed a new landing page for their Knox campaign, a business-to-business security suite. This site was built statically with a webpack compiler, Handlebars, and Sass. I was the track lead on the project, participating in technical decisions and handling scrum responsibilities.",
+        "client": "Samsung",
+        "link": "http://www.samsung.com/us/business/solutions/samsung-knox/",
+        "image": "http://www.samsung.com/us/business/solutions/samsung-knox/assets/images/samsung-knox-logo.png",
+        "show": true
     },
     {
         "brand": "Lord & Taylor and Saks Off5th",

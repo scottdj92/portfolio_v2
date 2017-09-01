@@ -27,10 +27,12 @@ export default class Header extends React.Component {
 
     render() {
         return (
-            <section className="header">
+            <section className="header section">
                 <div className="columns header__container">
                     <div className='logo column is-one-third is-offset-1'>
-                        <img src={logo} className='logo-img'/>
+                        <figure className='image is-square'>
+                            <img src={logo} className='logo-img'/>
+                        </figure>
                     </div>
                     <div className='header__copy__container column'>
                         <div className="header__title">

@@ -5,6 +5,10 @@
         color: lighten($black, 50%);
         font-size: $header;
     }
+    &__image {
+        width: 63%;
+        float: right;
+    }
     &__container {
         margin-top: 1em;
     }

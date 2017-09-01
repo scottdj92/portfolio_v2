@@ -15,7 +15,9 @@ class SelectedWork extends React.Component {
                 <div className='selected-work__project columns' key={key}>
                     <h3>{data.title}</h3>
                     <div className='image_container column'>
-                        <img className='selected-work__project__image' src={data.image}></img>
+                        <figure className='image'>
+                            <img className='selected-work__project__image' src={data.image}></img>
+                        </figure>
                     </div>
                     <div className='selected-work__project__info column is-8 is-offset-1'>
                         <p>{data.excerpt}</p>
@@ -51,7 +53,7 @@ class SelectedWork extends React.Component {
 
     render() {
         return (
-            <section className='selected-work'>
+            <section className='selected-work section'>
                 {this.maybeRenderWork()}
             </section>
         );

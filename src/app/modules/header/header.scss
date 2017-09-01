@@ -4,18 +4,19 @@
     background-size: cover;
     background-position: center;
     padding: 1%;
-    height: 85vh;
 
     &__container {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
+        padding: 2%;
     }
     &__copy__container {
-        margin-top: 4rem;
-        @include desktop {
-            margin-top: auto;
-        };
+        // margin-top: 4rem;
+        // @include desktop {
+        //     margin-top: auto;
+        // };
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
     &__title {
         h1 {
