@@ -35,7 +35,7 @@ module.exports = function(env) {
     return merge([
       common,
       parts.clean(PATHS.build),
-      parts.loadPDFFiles(),
+      parts.loadFiles(),
       parts.loadJavascript(PATHS.app),
       parts.lintJavaScript({ paths: PATHS.app }),
       parts.extractCSS(),
@@ -51,7 +51,7 @@ module.exports = function(env) {
       ],
     },
     parts.loadCSS(PATHS.app),
-    parts.loadPDFFiles(),
+    parts.loadFiles(),
     parts.loadImages(PATHS.img),
     parts.loadJavascript(PATHS.app),
     parts.devServer({

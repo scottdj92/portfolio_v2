@@ -124,14 +124,21 @@ exports.extractCSS = function(paths) {
     }
 };
 
-exports.loadPDFFiles = function(paths) {
+exports.loadFiles = function(paths) {
   return {
     module: {
       rules: [
         {
-          test: /\.pdf$/,
+          test: /\.(pdf|ico)$/,
           include: paths,
-          use: 'file-loader'
+          use: [
+              {
+                  loader: 'file-loader',
+                options: {
+                      name: '[name].[ext]'
+              }
+            }
+          ]
         }
       ]
     }

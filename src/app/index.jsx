@@ -1,6 +1,8 @@
 import React from 'react';
 import {render} from 'react-dom';
 
+import './img/favicon.ico';
+
 //import Sass
 import './_main.scss';
 
