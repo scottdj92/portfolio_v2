@@ -3,13 +3,9 @@ import React from 'react';
 import experience from './fixtures/skills';
 
 class Skills extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     renderSkills(section, key) {
         return (
-            <div className='skills__container__skill column is-4' key={key}>
+            <div className='skills__container__skill column is-3' key={key}>
                 <h4>{section.section}</h4>
                 <ul className='skills-list'>
                     {this.renderDrillDownSkills(section.skills)}

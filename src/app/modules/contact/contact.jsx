@@ -2,10 +2,6 @@ import React from 'react';
 import selfie from '../../img/selfie.jpg';
 
 class Contact extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <section className='contact'>

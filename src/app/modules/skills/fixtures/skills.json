@@ -1,6 +1,6 @@
 [
     {
-        "section": "JavaScript",
+        "section": "JavaScript/TypeScript",
         "skills": [
             "React",
             "Angular 1",
@@ -21,6 +21,14 @@
             "Gulp/webpack/Grunt",
             "GitHub/Stash/BitBucket",
             "Heroku"
+        ]
+    },
+    {
+        "section": "Full Stack",
+        "skills": [
+            "C#/.NET",
+            "ORM",
+            "Data structures and modelling"
         ]
     }
 ]

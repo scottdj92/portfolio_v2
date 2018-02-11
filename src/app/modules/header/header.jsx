@@ -6,11 +6,6 @@ import logo from '../../img/logo.svg';
 import resume from '../../resume.pdf';
 
 export default class Header extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
-
     addFlavorText() {
         //create a tagline that is pulled from headerTextJSON on render
         let select = this.getRandomIntInclusive(1, (headerTextJSON.length - 1));

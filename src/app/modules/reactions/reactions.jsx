@@ -6,10 +6,6 @@ import React from 'react';
 import reactionTextJSON from './fixtures/reactions.json';
 
 class Reactions extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     showReaction() {
         let select = this.getRandomIntInclusive(1, (reactionTextJSON.length - 1));
         let text = reactionTextJSON[select];
