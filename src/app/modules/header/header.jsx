@@ -43,7 +43,7 @@ export default class Header extends React.Component {
                         </div>
                         <div className='row'>
                             <div className=' header__button'>
-                                <a href={resume}>Resume</a>
+                                <a target="_blank" href={resume}>Resume</a>
                             </div>
                         </div>
                     </div>
